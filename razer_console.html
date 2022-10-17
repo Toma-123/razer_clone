@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href ="./css/razer_console.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <main>
+        <div class="header_container">
+            <header>
+    
+                <nav>
+                    
+                    <input type="text" name="search" placeholder="Razer.com 검색">
+    
+                    
+    
+    
+                    <a href="./razer_home.html"><img src="./img/logo/razer-ths-logo.svg" alt="로고"></a>
+                    <a href="./razer_pc.html">PC</a>
+                    <a href="./razer_console.html">콘솔</a>
+                    <a href="./razer_mobile.html">모바일</a>
+                    <a href="#">라이프스타일</a>
+                    <a href="#">서비스</a>
+                    <a href="#">커뮤니티</a>
+                    <a href="#">고객지원</a>
+                    <a href="#">스토어</a>
+                    <a href="#">
+                        <span class="material-symbols-outlined">
+                        search
+                        </span>
+                    </a>
+                    <a href="#">
+                        <span class="material-symbols-outlined">
+                        shopping_cart
+                        </span>
+                    </a>
+                </nav>
+                
+                <div class="nav767">
+    
+                    <button class="trigger-menu">
+                        <span></span>
+                        <span></span>
+                    </button>
+    
+                    <a href="./razer_home.html"><img src="./img/logo/razer-ths-logo.svg" alt="로고"></a>
+    
+                    <a href="#">
+                        <span class="material-symbols-outlined">
+                        shopping_cart
+                        </span>
+                    </a>
+                    
+                </div>
+            </header>
+        </div>
+    
+    <!-- header 767px script -->
+
+    <script>
+        // nav, trigger-menu = 클래스 active를 토글형태로 만들어줌
+
+        const header = document.querySelector('header');
+        const triggerMenu = document.querySelector('.trigger-menu');
+
+        triggerMenu.onclick = function(){
+            header.classList.toggle('active');
+            triggerMenu.classList.toggle('active');
+        }
+
+    </script>
+<!-- header 767px script -->
+    
+
+
+
+
+    
+        <section class="console_navbar">
+            <div>
+                <ul>
+                    <li>
+                        <a href="#" id="xbox_container" class="icon_container">
+                            <img src="./img/console_icon/icon-xboxlogo.svg" alt="xbox_icon">
+                            <div class="icon_label">
+                                XBOX
+                            </div>
+                            <div>
+                                New
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="PS_container" href="#" class="icon_container">
+                            <img src="./img/console_icon/icon-playstationlogo.svg" alt="PS_icon">
+                            <div class="icon_label">
+                                PlayStation
+                            </div>
+                            <div>
+                                New
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="intro_tag">
+            <div>
+                <div>
+                    <h1>
+                        콘솔 게이밍
+                    </h1>
+                    <p>
+                        PlayStation 5, Xbox Series X|S, Nintendo Switch 등 모든 플랫폼에서 고성능 헤드셋, 컨트롤러, 액세서리를 사용하며 완벽한 우위를 제공하는 콘솔을 즐기세요.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="console_item back1">
+            <div>
+                <h2>
+                    RAZER KAIRA HYPERSPEED
+                </h2>
+                <p>
+                    어디서나 플레이하고, 어디서나 승리하세요.
+                </p>
+                <a href="#">
+                    자세한 정보 >
+                </a>
+            </div>
+        </section>
+
+        <section class ="console_panel">
+            <div class="multipanel">
+                <ul>
+                    <li>
+                        <figure>
+                            <img src="./img/PC_img/webcams-category-500x500.jpg">
+                            <figcaption>
+                                <h3>UNIVERSAL QUICK CHARGING STANDS FOR XBOX</h3>
+                                <p>Xbox 컨트롤러용 급속 충전기</p><br>
+                                <a href="#">자세한 정보> </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+        
+                    <li>
+                        <figure>
+                            <img src="./img/PC_img/microphones-category-500x500.jpg">
+                            <figcaption>
+                                <h3>RAZER QUICK CHARGING STAND FOR PS5™</h3>
+                                <p>PS5™ DualSense™ 무선 컨트롤러 급속 충전 스탠드</p><br>
+                                <a href="#">자세한 정보> </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+        
+                    
+                </ul>
+            </div>
+        </section>
+
+        <section class="console_item back2">
+            <div>
+                <h2>
+                    RAZER KAIRA PRO
+                </h2>
+                <p>
+                    햅틱 기능을 탑재한 듀얼 무선 PlayStation 5 헤드셋
+                </p>
+                <a href="#">
+                    자세한 정보 >
+                </a>
+            </div>
+        </section>
+
+        <section class="console_item back3">
+            <div>
+                <h2>
+                    RAZER WOLVERINE V2 CHROMA
+                </h2>
+                <p>
+                    완전히 커스터마이징 가능한 Xbox Series X|S, Xbox One 및 PC 컨트롤러
+                </p>
+                <a href="#">
+                    자세한 정보 >
+                </a>
+            </div>
+        </section>
+
+
+        <section class="console_lastpanel">
+            <div>
+                <img class ="gamepad_mobile" src="./img/console_img/console-gamepads-engineered-category-mobile.jpg" alt="gamepads_mobile">
+
+                <h2>
+                    완전한 컨트롤을 위해 설계된 게임패드
+                </h2>
+                <p>
+                    Razer Raiju가 과학, 디자인 및 엔지니어링을 결합하여 상상을 현실로 만든 방법을 확인하세요.
+                </p>
+                <a href="#">
+                    자세한 정보 >
+                </a>
+            </div>
+
+        </section>
+
+
+
+
+        <div class="footer_container">
+            <div class="foot1">           
+                <div class="label_container">
+                    <label>쇼핑</label>
+                    <ul>
+                        <li><a href="">RazerStores</a></li>
+                        <li><a href="">RazerCafe</a></li>
+                        <li><a href="">매장 찾기 서비스</a></li>
+                        <li><a href="">구매 프로그램</a></li>
+                        <li><a href="">Exclusives</a></li>
+                    </ul>        
+                </div>
+        
+                <div class="label_container">
+                    <label>둘러보기</label>
+                    <ul>
+                        <li><a href="">기술</a></li>
+                        <li><a href="">Chroma RGB</a></li>
+                        <li><a href="">콘셉트</a></li>
+                        <li><a href="">e스포츠</a></li>
+                        <li><a href="">컬래버레이션</a></li>
+                    </ul>        
+                </div>
+        
+                <div class="label_container">
+                    <label>지원</label>
+                    <ul>
+                        <li><a href="">도움 받기</a></li>
+                        <li><a href="">등록 및 보증</a></li>
+                        <li><a href="">RazerStore 지원</a></li>
+                        <li><a href="">Razer ID 관리</a></li>
+                        <li><a href="">Support Videos</a></li>
+                    </ul>        
+                </div>
+        
+                <div class="label_container">
+                    <label>회사관련</label>
+                    <ul>
+                        <li><a href="">Razer 소개</a></li>
+                        <li><a href="">채용</a></li>
+                        <li><a href="">프레스 룸</a></li>
+                        <li><a href="">zVentures</a></li>
+                        <li><a href="">연락처</a></li>
+                    </ul>        
+                </div>
+                
+        
+                <div class="SNS_container">
+                    <p>FOR GAMERS. BY GAMERS.™</p>
+                    <div class="SNS_icon">
+                        <img src="./img/SNS_icon/SM0001-facebook.svg">
+                        <img src="./img/SNS_icon/SM0003-instagram.svg">
+                        <img src="./img/SNS_icon/SM0005-twitter.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="end_container">
+                <div class="line"></div>
+                        
+                <div class="end">
+                        <div class="end_left">
+                            <div>Copyright © 2022 Razer Inc. All rights reserved.</div>
+                            <div>법적 약관 | 개인정보 보호정책 | 쿠키 정책</div>
+                        </div>
+                        <div>   
+                            <div class="end_right"><a href="#">대한민국</a>  |  Change Location > </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    
+        <script>
+            const footerTrigger = document.querySelectorAll('.label_container')
+            const footList = document.querySelectorAll('.label_container ul')
+            
+    
+    
+            for(let i=0; i<footerTrigger.length; i++){
+                footerTrigger[i].onclick = function(){
+                footerTrigger[i].classList.toggle('active');
+                
+            }
+            }
+    
+            // =================== 위에 for문으로 대체 =====================
+    
+            // footerTrigger[0].onclick = function(){
+            //     footerTrigger[0].classList.toggle('active');
+            //     footList[0].classList.toggle('active');
+            //     // footIcon[0].classList.toggle('active');
+            // }
+    
+            // footerTrigger[1].onclick = function(){
+            //     footerTrigger[1].classList.toggle('active');
+            //     footList[1].classList.toggle('active');
+            // }
+    
+            // footerTrigger[2].onclick = function(){
+            //     footerTrigger[2].classList.toggle('active');
+            //     footList[2].classList.toggle('active');
+            // }
+    
+            // footerTrigger[3].onclick = function(){
+            //     footerTrigger[3].classList.toggle('active');
+            //     footList[3].classList.toggle('active');
+            // }
+          
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+</body>
+</html>

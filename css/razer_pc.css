@@ -1,0 +1,395 @@
+@import url(../css/rezer_common.css);
+
+main{background-color: #000; width: 100%; }
+
+header > nav > a:nth-of-type(2) {
+    color:#fff;
+}
+
+.subnavbar{
+    padding-top: 80px;
+    background-color: #1a1a1a;
+    border-bottom:1px solid #44D62C;
+    max-width: 1920px;
+    margin: 0 auto;
+   
+}
+
+.subnavbar > nav {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.subnavbar a {
+    color: #fff;
+}
+
+.subnavbar > nav > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    font-size: 12px;
+
+}
+
+
+
+.subnavbar > nav > ul > li {
+    padding-bottom: 1%;
+}
+
+.subnavbar_pcbar_trigger {
+    display: none;
+}
+
+/* ====================================================================================================
+=========================================subnavbar 반응형 START============================================
+==================================================================================================== */
+
+
+
+@media (max-width:767px) {
+
+    .subnavbar_pcbar_trigger {
+        display: block;
+        color: #999;
+        font-size: 16px;
+        margin-left: 4%;
+        line-height: 1.5;
+        background-color: #1a1a1a;
+        border: none;
+        margin-bottom:  20px;
+    }
+
+    .subnavbar{
+        padding-top: 80px;
+        background-color: #1a1a1a;
+        border-bottom:1px solid #44D62C;   
+        position: relative;
+    }
+    
+    .subnavbar a {
+        color: #fff;
+    }
+
+    .subnavbar > nav {
+        width: 100%;
+        margin: 0 auto;
+        position: absolute;
+        background-color: #1a1a1a;
+        border-bottom:1px solid #44D62C; 
+        
+    }
+    
+    
+    .subnavbar > nav > ul {
+        display: none;
+        margin-top: -4%;
+    }
+    
+    .subnavbar > nav > ul > li {
+        color: #fff;
+        font-size: 14px;
+        margin: 0 5%;
+        line-height: 1.5;
+        margin-top: 2%;
+        border-bottom: 0.5px solid #888;
+        /* 토글 */
+    }
+
+    .subnavbar ul.active{
+        display:block;
+    }
+
+    /* =============================================================== */
+
+    .subnavbar_pcbar_trigger.active > span:nth-child(2){ 
+        display: inline-block;
+        transform: rotate(180deg);
+    }
+
+    .subnavbar > nav > ul > li:nth-of-type(9){
+        border: none;
+    }
+
+}
+
+/* ====================================================================================================
+=========================================subnavbar 반응형 END============================================
+==================================================================================================== */
+
+
+.intro_section{
+    background-color: #111111;
+    padding: 3rem 0.5rem;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.intro_section h2 {
+    color: #44d62c;
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+    padding: 0 0 5px 0;
+    margin: 0 0 8 0;
+    text-align: center;
+}
+
+.intro_section p {
+    box-sizing: border-box;
+    color: #999;
+    font-size: 1.125rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 3%;
+    text-align: center;
+}
+
+
+
+.multipanel {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #252525;
+    padding: 25px 0;
+    margin: 0;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.multipanel > ul {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 18%;
+    
+    
+    
+}
+
+.multipanel li {
+    width: 32%;
+    margin-bottom: 2%;
+    
+}
+
+.multipanel img {width: 100%;}
+
+
+.multipanel > ul > li > figure > figcaption {
+    width: 100%;
+    display: block;
+    height: 180px;
+
+    background-color: #111111;
+    border-bottom: 1px solid #44d62c;
+    line-height: 1.5em;
+    
+}
+
+
+
+.multipanel h3 {
+    color: #fff;
+    
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+.multipanel p {
+    color: #888;
+    font-size: 14px;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+.multipanel a {
+    color: #44d62c;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+
+/* ====================================================================================================
+=========================================multipanel 반응형 START============================================
+==================================================================================================== */
+
+@media (max-width:767px) {
+
+    .multipanel {
+        box-sizing: border-box;
+        width: 100%;
+        background-color: #252525;
+        padding: 25px 0;
+        margin: 0;
+    }
+    
+    .multipanel > ul {
+        
+        display: block;
+    
+        margin: 0 auto;
+        
+        
+        
+    }
+    
+    .multipanel li {
+        width: 90%;
+        margin-bottom: 2%;
+        margin: 0 auto;
+        
+    }
+    
+    .multipanel img {width: 100%;}
+    
+    
+    .multipanel > ul > li > figure > figcaption {
+        width: 100%;
+        display: block;
+        height: 180px;
+    
+        background-color: #111111;
+        border-bottom: 1px solid #44d62c;
+        line-height: 1.5em;
+        margin-bottom: 4%;
+    }
+    
+    
+    
+    .multipanel h3 {
+        color: #fff;
+        
+        margin: 0;
+        padding: 10px;
+        text-align: left;
+        width: 100%;
+    }
+    
+    .multipanel p {
+        color: #888;
+        font-size: 14px;
+        margin: 0;
+        padding: 10px;
+        text-align: left;
+        width: 100%;
+    }
+    
+    .multipanel a {
+        color: #44d62c;
+        display: inline-block;
+        font-size: 14px;
+        margin: 0;
+        padding: 10px;
+        text-align: left;
+        width: 100%;
+    }
+    #nothing {
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+/* ====================================================================================================
+=========================================multipanel 반응형 END============================================
+==================================================================================================== */
+
+
+
+
+
+
+.pc_contents1{
+    width: 100%;
+    position: relative;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.pc_contents1 > article {
+    position: absolute;
+    color: #fff;
+    top:0;
+    left:42%;
+    text-align: center;
+}
+
+.pc_contents1 h2 {
+    font-weight: 300;
+    padding: 4.0625rem 0 0;
+    font-size: 1.75rem;
+    letter-spacing: 0.0625rem;
+    line-height: 1.875rem;
+    
+}
+
+
+.pc_contents1 a {
+    color: #44d62c;
+    text-align: center;
+}
+
+.pc_contents1 img {
+    width: 100%;
+}
+
+/* ====================================================================================================
+=========================================pc_contents 반응형 START============================================
+==================================================================================================== */
+
+@media (max-width:767px) {
+    .pc_contents1{
+        width: 100%;
+        position: relative;
+        border-bottom:1px solid #44D62C;
+        
+    }
+    
+    .pc_contents1 > article {
+        position: absolute;
+        color: #fff;
+        text-align: center;
+        left:25%;
+    }
+    
+    .pc_contents1 h2 {
+        font-weight: 300;
+        font-size: 1.75rem;
+        letter-spacing: 0.0625rem;
+        line-height: 1.875rem;
+        
+    }
+    
+    .pc_contents1 p {
+        margin-bottom: 10%;
+    }
+    
+    .pc_contents1 a {
+        color: #44d62c;
+        text-align: center;
+    }
+    
+    .pc_contents1 img {
+        width: 100%;
+    }
+}
+
+/* ====================================================================================================
+=========================================pc_contents 반응형 END============================================
+==================================================================================================== */

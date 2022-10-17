@@ -1,0 +1,59 @@
+@import url(../css/rezer_common.css);
+
+.foot1{
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    font-size: 12px;
+    padding:0 20%;
+}
+
+.label_container label {
+    display: block;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 0;
+    min-width: 4.375rem;
+    padding-bottom: 0.75rem;
+}
+
+.label_container a{
+    color: #999;
+}
+
+.SNS_container {
+    text-align: right;
+}
+
+.SNS_container p{
+    font-size: .9rem;
+    letter-spacing: .5px;
+    color: #44d62c;
+}
+
+.SNS_container img{
+    width: 1.875rem;
+}
+
+.line{
+    margin-top: 20px;
+    border-bottom: 2px solid #999;
+}
+
+
+.end {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20%;
+    font-size: 12px;
+}
+
+.end_left{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.end_left >div:nth-of-type(1){
+    padding-right: 36.8px;   
+}

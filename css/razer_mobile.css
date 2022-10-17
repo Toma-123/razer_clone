@@ -347,7 +347,26 @@ main{
     background-image: url('../img/mobilemenu_img/gothe-extramile-category-1920x700-desktop.jpg');
 }
 
+@media (max-width:767px){
 
+    .back4{
+        background-image: url('../img/mobilemenu_img/500x500_kishi-v2-for-iphone.jpg');
+        height: 500px;
+    }
+    
+    .back5{
+        background-image: url('../img/mobilemenu_img/500x500_kishi-v2-for-android.jpg');
+        height: 500px;
+    }
+    
+    .back6{
+        background-image: url('../img/mobilemenu_img/stay-in-sync450x480.jpg');
+    }
+    
+    .back7{
+        background-image: url('../img/mobilemenu_img/gotheextramile-category-450x480-mobile.jpg');
+    }
+}
 
 
 

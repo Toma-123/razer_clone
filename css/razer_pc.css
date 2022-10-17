@@ -99,7 +99,7 @@ header > nav > a:nth-of-type(2) {
     }
 
     .subnavbar ul.active{
-        display:block;
+        display:block;  
     }
 
     /* =============================================================== */

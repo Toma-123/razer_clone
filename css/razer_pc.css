@@ -320,13 +320,16 @@ header > nav > a:nth-of-type(2) {
     position: relative;
     max-width: 1920px;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom:1px solid #44D62C;
 }
 
 .pc_contents1 > article {
     position: absolute;
     color: #fff;
-    top:0;
-    left:42%;
+    top:0%;
     text-align: center;
 }
 

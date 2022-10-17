@@ -8,7 +8,7 @@
     <link href="./css/razer_header.css" rel="stylesheet">
 </head>
 <body>
-    <header class="header_container">
+    <!-- <header class="header_container">
         <nav>
             <a href="#"><img src="./img/logo/razer-ths-logo.svg" alt="로고"></a>
             <a href="#">PC</a>
@@ -22,6 +22,75 @@
             <a href="#">검색</a>
             <a href="#">장바</a>
         </nav>
-    </header>
+    </header> -->
+
+    <div class="header_container">
+        <header>
+
+            <nav>
+                
+                <input type="text" name="search" placeholder="Razer.com 검색">
+
+                
+
+
+                <a href="./index.html"><img src="./img/logo/razer-ths-logo.svg" alt="로고"></a>
+                <a href="./razer_pc.html">PC</a>
+                <a href="./razer_console.html">콘솔</a>
+                <a href="./razer_mobile.html">모바일</a>
+                <a href="#">라이프스타일</a>
+                <a href="#">서비스</a>
+                <a href="#">커뮤니티</a>
+                <a href="#">고객지원</a>
+                <a href="#">스토어</a>
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                    search
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                    shopping_cart
+                    </span>
+                </a>
+            </nav>
+            
+            <div class="nav767">
+
+                <button class="trigger-menu">
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <a href="./index.html"><img src="./img/logo/razer-ths-logo.svg" alt="로고"></a>
+
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                    shopping_cart
+                    </span>
+                </a>
+                
+            </div>
+        </header>
+    </div>
+
+<!-- header 767px script -->
+
+<script>
+    // nav, trigger-menu = 클래스 active를 토글형태로 만들어줌
+
+    const header = document.querySelector('header');
+    const triggerMenu = document.querySelector('.trigger-menu');
+
+    triggerMenu.onclick = function(){
+        header.classList.toggle('active');
+        triggerMenu.classList.toggle('active');
+    }
+
+</script>
+<!-- header 767px script -->
+
+
+
 </body>
 </html>

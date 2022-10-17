@@ -1,0 +1,446 @@
+@import url(../css/rezer_common.css);
+
+a {text-decoration: none;}
+ul {list-style: none;}
+p {padding: 0; margin: 0;}
+h1 {font-size: 3rem;}
+body{padding: 0; margin: 0;}
+img {vertical-align: middle;}
+h2,h3 { color: #fff;}
+
+
+.side {background-color: #222;
+    padding-bottom: 10px;
+max-width: 1920px;
+margin:0 auto;}
+
+
+
+main{
+    width:100%;
+}
+
+
+/* header {
+    width: 100%;
+    box-sizing: border-box;
+    position:fixed;
+    background-color: #040404;
+    
+    display: flex;
+        
+    flex-wrap: nowrap;
+    height: 3.75rem;    
+    font-weight: 300;
+    align-items: center;
+    font-size: 1rem;
+    z-index: 200;
+}
+
+header nav{
+    width: 100%;
+}
+
+header li:hover a{
+    color:#fff;
+}
+
+header > a{
+    
+    
+    width: 35px;
+    margin-left :70px;
+}
+
+header img {
+    width: 100%;
+}
+
+header a {
+    color:#888;
+}
+
+header ul{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;   
+}
+
+header li {
+    width: 100%;
+    margin: 0 70px;
+} */
+
+
+
+main{background-color: #000;}
+
+
+.mainpage{
+    padding-top: 4%;
+    width:100%;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.mainpage img {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    
+}
+
+.mainpage span {color:rgb(158, 218, 20);}
+
+.arti{
+    margin: 2% auto;
+    padding: 0;
+    color: #fff;
+    position: absolute;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    z-index: 999;
+}
+
+.arti > div{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.arti > div > a{
+    padding: 0.375rem 0 0 0;
+    margin: 0 20px;
+    
+}
+
+.arti a {
+    color: #fff;
+    
+
+}
+
+.mainpage2{
+    
+    width:100%;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.mainpage2 img {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.arti2 {
+    z-index: 1;
+    margin-top: 4%;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+}
+
+.arti2 > div{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+ }
+
+ .arti2 > div > p {
+    padding: 0.375rem 0 0 0;
+    margin: 0 20px;
+ }
+
+ .arti2 a { color: #fff;}
+
+ .mainpage2 span {color:rgb(158, 218, 20);}
+
+
+.arti3 {
+    z-index: 1;
+    color: #fff;
+    position: absolute;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.arti3 > div{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+ }
+
+ .arti3 > div > p {
+    padding: 0.375rem 0 0 0;
+    margin: 0 20px;
+ }
+
+ .arti3 a { color: #fff;}
+
+/* ===========================================================================================
+======================================메인페이지 반응형======================================
+=========================================================================================== */
+
+@media (max-width:767px){
+
+    .side {background-color: #222;
+        padding-bottom: 5px;}
+
+    .mainpage{
+        position: relative;
+        top:0;
+        left:0;
+        width: 100%;
+        align-items: center;
+        z-index: 1;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .mainpage img {
+        width: 100%;
+        box-sizing: border-box;
+        
+    }
+    
+    .mainpage span {color:rgb(158, 218, 20);}
+    
+
+    .arti{
+        position: absolute;
+        font-family: "RazerF5",Arial,Helvetica,sans-serif;
+        font-size: 1rem;
+        font-weight: 300;
+        letter-spacing: 0.0625rem;
+        line-height: 2.25rem;
+        z-index: 2;
+        margin: 0 auto;
+        margin-top: 10%;
+    }
+
+     h1 {
+        font-size: 1.5rem;
+    }
+    h2 {font-size: 1.3rem;}
+    
+    .arti > div{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    
+    .arti > div > a{
+        padding: 0.375rem 0 0 0;
+        margin: 0 20px;
+        
+    }
+    
+    .arti a {
+        color: #fff;
+        
+    
+    }
+
+    .mainpage2{
+        position: relative;
+        top:0;
+        left:0;
+        width: 100%;
+        align-items: center;
+        z-index: 1;
+        display: flex;
+        justify-items: center;
+    }
+    .mainpage2 img {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .arti2 {
+        position: absolute;
+        font-family: "RazerF5",Arial,Helvetica,sans-serif;
+        font-size: 1rem;
+        font-weight: 300;
+        letter-spacing: 0.0625rem;
+        line-height: 2.25rem;
+        z-index: 2;
+        margin: 0 auto;
+        margin-top: -60%;
+    }
+    
+    .arti2 > div{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+     }
+    
+     .arti2 > div > p {
+        padding: 0.375rem 0 0 0;
+        margin: 0 20px;
+     }
+    
+     .arti2 a { color: #fff;}
+    
+     .mainpage2 span {color:rgb(158, 218, 20);}
+    
+    
+    .arti3 {
+        position: absolute;
+        font-family: "RazerF5",Arial,Helvetica,sans-serif;
+        font-size: 1rem;
+        font-weight: 300;
+        letter-spacing: 0.0625rem;
+        line-height: 2.25rem;
+        z-index: 2;
+        margin: 0 auto;
+        margin-top: -70%;
+    }
+    
+    .arti3 > div{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+     }
+    
+     .arti3 > div > p {
+        padding: 0.375rem 0 0 0;
+        margin: 0 20px;
+     }
+    
+     .arti3 a { color: #fff;}
+
+}
+
+/* ===========================================================================================
+======================================메인페이지 반응형 END======================================
+=========================================================================================== */
+
+
+
+
+
+
+.item6_container {
+    box-sizing: border-box;    
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    
+}
+
+ .item6 {    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box; 
+    max-width: 1920px;
+    background-color: #222;
+ }
+
+
+.item6 > li {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0.5% 0.5%;
+    width: 49%;
+}
+
+.item6 img {
+    width: 100%;
+}
+
+ .item6> li > div {
+    
+    position: absolute;
+    text-align: center;
+    margin-top: 5%;
+    
+ }
+
+
+.item6 > li > div > a {
+    margin:20% 10px;
+    color: #fff;
+    margin-top: 10%;
+}
+
+.item6 a > span {
+    color:rgb(158, 218, 20); ;
+}
+
+#mobileside {
+    display: none;
+}
+
+/* ===========================================================================================
+======================================home_item6 767 반응형======================================
+=========================================================================================== */
+
+@media (max-width:767px){
+
+    .item6_container {
+        width: 99.5%;
+        display: block;
+        box-sizing: border-box;    
+        padding: 0;
+        margin: 0;
+        
+    }
+    
+     .item6 {
+        display: block;
+        box-sizing: border-box; 
+        margin: 0;
+        padding: 0;
+        background-color: #222;
+     }
+    
+    .item6 picture {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .item6 img {
+        width: 100%;
+    }
+    
+    .item6 > li {
+        width: 100%;
+        box-sizing: border-box;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+     .item6> li > div {
+        
+        position: absolute;
+        text-align: center;
+        margin-top: 20%;
+        
+     }
+
+     .item6 a {margin: 10px;color: #fff;}
+
+     #mobileside {
+        display: block;
+    }
+}
+    

@@ -1,0 +1,459 @@
+@import url(./rezer_common.css);
+
+header > nav > a:nth-of-type(3) {
+    color:#fff;
+}
+
+main{
+    width: 100%;
+    background-color: #000;
+}
+
+.console_navbar {
+    padding-top: 100px;
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #44D62C;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.console_navbar > div {
+    
+}
+
+.console_navbar ul {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: slidein;
+    animation-duration: 1s;
+    
+}
+
+@keyframes slidein{
+    0%{margin-left: 30%; opacity: 0%;}
+    100%{margin-left: 0%; opacity: 100%;}
+}
+
+.icon_container{
+    text-align: center;
+    margin: 0 25px;
+}
+
+#xbox_container{
+    display: block;
+    margin-top: 6px;
+}
+
+#PS_container{
+    display: block;
+}
+
+.icon_container > div:nth-of-type(2) {
+    color: #F5B21D;
+    font-size: 12px;
+    text-align: center;
+}
+
+.icon_label{
+    font-size: 12px;
+    font-family: 'Roboto';
+    color: #ffffff;
+    margin-bottom:4px;
+    margin-top: 5px;
+}
+
+.console_navbar li:hover .icon_label{
+    color: #F5B21D;
+}
+
+
+
+.intro_tag{
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: #1a1a1a;    
+}
+
+.intro_tag > div {
+    background-color: #111;
+    padding: 3rem 0;
+}
+
+.intro_tag > div > div {
+    display: grid;
+    grid-template-areas:
+        "first"
+        "second"
+        "third"
+        "forth";
+    max-width: 980px;
+    text-align: center;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+    margin: 0 auto;
+}
+
+.intro_tag h1 {
+    margin: 0;
+    color: #44d62c;
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+    padding-bottom: 5px;
+    margin-bottom: 8px;
+}
+
+.intro_tag p {
+    color: #888;
+    max-width: 100%;
+    margin: 0 auto;
+    
+}
+
+.console_item {
+    max-width: 1920px;
+    margin: 0 auto;
+    background-position: top;
+    background-position-x: center;
+    background-position-y: top;
+    background-size: cover;
+    height: 700px;
+    max-height: 700px;
+    border-bottom: 1px solid #44D62C;
+    background-color:#000;
+    text-align: center;
+    padding: 0;
+    background-repeat: no-repeat;
+}
+
+.console_item h2{
+    font-family: "RazerF5",Arial,Helvetica,sans-serif;
+    font-size: 1.75rem;
+    font-weight: 200;
+    letter-spacing: 0.0625rem;
+    line-height: 1.875rem;
+    margin: 0;
+    font-weight: 300;
+    padding: 4.0625rem 0 0;
+    color: #ffffff;
+}
+
+.console_item p {
+    max-width: 950px;
+    padding: 0.4375rem 1rem 1.25rem;
+    margin: 0 auto;
+    color: #999;
+    font-size: 1.125rem;
+    font-weight: 300;
+    
+}
+
+.console_item a {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #44D62C;
+}
+
+
+
+
+
+
+.multipanel {
+    box-sizing: border-box;
+    
+    background-color: #252525;
+    padding: 25px 0;
+    margin: 0;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.multipanel > ul {
+    
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 900px;
+    height: 100%;
+    
+    
+}
+
+.multipanel li {
+    width: 100%;
+    margin: 0 10px;
+    
+}
+
+
+
+.multipanel img {width: 100%;}
+
+
+.multipanel > ul > li > figure > figcaption {
+    
+    display: grid;
+    grid-template-rows: auto 0.5fr 2fr 45px;
+    height: 220px;
+
+    background-color: #111111;
+    border-bottom: 1px solid #44d62c;
+    line-height: 1.5em;
+    
+}
+
+
+
+.multipanel h3 {
+    color: #fff;
+    
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+.multipanel p {
+    text-align: left;
+    font-size: .875rem;
+    font-weight: 300;
+    color: #999;
+    padding: 0 10px;
+}
+
+.multipanel a {
+    color: #44d62c;
+    display: block;
+    font-size: 14px;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+/* ====================================================================================================
+=========================================multipanel 반응형 START============================================
+==================================================================================================== */
+
+@media (max-width:767px) {
+
+    .multipanel {
+        box-sizing: border-box;
+        width: 100%;
+        background-color: #252525;
+        padding: 25px 0;
+        margin: 0;
+    }
+    
+    .multipanel > ul {
+        
+        display: block;
+    
+        margin: 0 auto;
+        
+        
+        
+    }
+    
+    .multipanel li {
+        width: 90%;
+        margin-bottom: 2%;
+        margin: 0 auto;
+        
+    }
+    
+    .multipanel img {width: 100%;}
+    
+    
+    .multipanel > ul > li > figure > figcaption {
+        width: 100%;
+        display: block;
+        height: 180px;
+    
+        background-color: #111111;
+        border-bottom: 1px solid #44d62c;
+        line-height: 1.5em;
+        margin-bottom: 4%;
+    }
+    
+    
+    
+    .multipanel h3 {
+        color: #fff;
+        
+        margin: 0;
+        padding: 10px;
+        text-align: left;
+        width: 100%;
+    }
+    
+    .multipanel p {
+        color: #888;
+        font-size: 14px;
+        margin: 0;
+        padding: 10px;
+        text-align: left;
+        width: 100%;
+    }
+    
+    .multipanel a {
+        color: #44d62c;
+        display: inline-block;
+        font-size: 14px;
+        margin: 0;
+        padding: 10px;
+        text-align: left;
+        width: 100%;
+    }
+    #nothing {
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+/* ====================================================================================================
+=========================================multipanel 반응형 END============================================
+==================================================================================================== */
+
+
+
+
+
+/* ========================console_pabael background-image 1,2,3 ============================ */
+
+.back1{
+    background-image: url('../img/console_img/kaira-hyperspeed-1920x700-desktop-cat-banner.jpg');
+}
+
+.back2{
+    background-image: url('../img/console_img/razer-kaira-pro-category-desktop.jpg');
+}
+
+.back3{
+    background-image: url('../img/console_img/razer-wolverine-v2-chroma-category-1920x700-desktop.jpg');
+}
+
+/* ========================console_pabael background-image 1,2,3 ============================ */
+
+.console_lastpanel {
+    display: grid;
+    background-image: url('../img/console_img/console-gamepads-engineered-category-desktop.jpg');
+    background-repeat: no-repeat;
+    min-height: 400px;
+    grid-template-columns: 1fr 2fr;
+    max-width: 1920px;
+    background-position: top;
+    background-position-x: center;
+    background-position-y: top;
+    background-size: cover;
+    border-bottom: 1px solid #44D62C;
+    background-color:#000;
+    margin: 0 auto;
+}
+
+.console_lastpanel > div{
+    text-align: left;
+    justify-self: left;
+    margin-left: 40%;
+    margin-top:8%;
+    
+    
+}
+
+.console_lastpanel h2{
+    font-family: "RazerF5",Arial,Helvetica,sans-serif;
+    font-size: 1.75rem;
+    font-weight: 200;
+    letter-spacing: 0.0625rem;
+    line-height: 1.875rem;
+    margin: 0;
+    font-weight: 300;
+    padding: 4.0625rem 0 0;
+    color: #ffffff;
+}
+
+.console_lastpanel p {
+    max-width: 950px;
+    padding: 0.4375rem 1rem 1.25rem 0;
+    margin: 0 auto;
+    color: #999;
+    font-size: 1.125rem;
+    font-weight: 300;
+    
+}
+
+.console_lastpanel a {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #44D62C;
+}
+
+.gamepad_mobile{
+    display: none;
+}
+
+/* =====================.console_lastpanel 반응형 START ========================================== */
+
+@media (max-width:767px) {
+    .console_lastpanel {
+        display: block;
+        background: none;
+        width: 100%;
+        background-color: #000;
+        padding-bottom: 10%;
+    }
+    
+    .console_lastpanel > div{
+    margin: 0;
+    margin-left: 4%;
+        
+    }
+    
+    .console_lastpanel h2{
+        font-family: "RazerF5",Arial,Helvetica,sans-serif;
+        font-size: 1.75rem;
+        font-weight: 200;
+        letter-spacing: 0.0625rem;
+        line-height: 1.875rem;
+        margin: 0;
+        font-weight: 300;
+        padding: 4.0625rem 0 0;
+        color: #44D62C;
+    }
+    
+    .console_lastpanel p {
+        max-width: 950px;
+        padding: 0.4375rem 1rem 1.25rem 0;
+        margin: 0 auto;
+        color: #999;
+        font-size: 1.125rem;
+        font-weight: 300;
+        
+    }
+    
+    .console_lastpanel a {
+        font-size: 1rem;
+        font-weight: 300;
+        color: #44D62C;
+        padding-bottom: 4%;
+    }
+    
+    .gamepad_mobile{
+        display: block;
+        width: 150%;
+    max-width: 150%;
+    margin-left: -50%;
+    }
+}

@@ -18,6 +18,7 @@ main {
     top:2%;
     text-align: center;
     
+    
     margin: 0 auto;
 }
 
@@ -806,6 +807,7 @@ text-transform: uppercase;
 
 .hyperspeed_imgcontainer img {
     width: 100%;
+    max-width: 1920px;
 }
 
 .video3_container{

@@ -1,7 +1,7 @@
-@import url(./rezer_common.css);
+@import url(../css/rezer_common.css);
 
 
-header > nav > a:nth-of-type(4) {
+header > nav > a:nth-of-type(5) {
     color:#fff;
 }
 
@@ -9,7 +9,6 @@ main{
     width: 100%;
     background-color: #111111;
 }
-
 
 
 .mobile_navbar {
@@ -84,34 +83,31 @@ main{
 /* === moblie icon new on/off === */
 
 
-#controller> div:nth-of-type(2){
+#watch> div:nth-of-type(2){
+    visibility: hidden;
+}
+#apparel> div:nth-of-type(2){
     visibility: visible;
 }
-#headphones> div:nth-of-type(2){
+#bags> div:nth-of-type(2){
     visibility: hidden;
 }
-#earbuds> div:nth-of-type(2){
+#gear> div:nth-of-type(2){
     visibility: hidden;
 }
-#DAC> div:nth-of-type(2){
+#sneki> div:nth-of-type(2){
+    visibility: visible;
+}
+#respawn> div:nth-of-type(2){
     visibility: hidden;
 }
-#glasses> div:nth-of-type(2){
+#collabs> div:nth-of-type(2){
+    visibility: visible;
+}
+#mac> div:nth-of-type(2){
     visibility: hidden;
 }
-#case> div:nth-of-type(2){
-    visibility: hidden;
-}
-#cortex> div:nth-of-type(2){
-    visibility: hidden;
-}
-#android> div:nth-of-type(2){
-    visibility: hidden;
-}
- 
-#iOS > div:nth-of-type(2){
-    visibility: hidden;
-}
+
 
 /* === moblie icon new on/off === */
 /* === moblie icon new on/off === */
@@ -120,7 +116,7 @@ main{
 
 
 /* ==========================================================================
-===================== .mobile_navbar 767 px START ===========================
+======================= .mobile_navbar 767 px START ==========================
 ========================================================================== */
 
 @media (max-width:767px){
@@ -235,12 +231,8 @@ main{
 }
 
 /* ==========================================================================
-======================= .mobile_navbar 767 px END============================
+======================= .mobile_navbar 767 px END ============================
 ========================================================================== */
-
-
-
-
 
 .intro_tag{
     width: 100%;
@@ -269,12 +261,14 @@ main{
 }
 
 .intro_tag h1 {
-    margin: 0;
+    margin: 0 auto;
     color: #44d62c;
     font-size: 2.25rem;
     line-height: 2.25rem;
     padding-bottom: 5px;
     margin-bottom: 8px;
+
+    
 }
 
 .intro_tag p {
@@ -333,227 +327,39 @@ main{
     color: #44D62C;
 }
 
-.back4{
-    background-image: url('../img/mobilemenu_img/razer-kishi-v2-for-iphone-1920x700-desktop.jpg');
+.lifeback1{
+    background-image: url('../img/lifestyle_img/sneki-snek-s2-desktop-cat-banner.jpg');
 }
 
-.back5{
-    background-image: url('../img/mobilemenu_img/razer-kishi-v2-android-1920x700-desktop.jpg');
+.lifeback2{
+    background-image: url("../img/lifestyle_img/complete-your-set-up-1920x700-desktop-cat-banner.jpg");
 }
 
-.back6{
-    background-image: url('../img/mobilemenu_img/stay-in-sync-1920x700.jpg');
+.lifeback3{
+    background-image: url("../img/lifestyle_img/collabs-category-1920x700-desktop.jpg");
 }
 
-.back7{
-    background-image: url('../img/mobilemenu_img/gothe-extramile-category-1920x700-desktop.jpg');
+.lifeback4{
+    background-image: url("../img/lifestyle_img/apparel-category-1920x700-desktop.jpg");
 }
 
-@media (max-width:767px){
-
-    .back4{
-        background-image: url('../img/mobilemenu_img/500x500_kishi-v2-for-iphone.jpg');
-        height: 500px;
-    }
-    
-    .back5{
-        background-image: url('../img/mobilemenu_img/500x500_kishi-v2-for-android.jpg');
-        height: 500px;
-    }
-    
-    .back6{
-        background-image: url('../img/mobilemenu_img/stay-in-sync450x480.jpg');
-    }
-    
-    .back7{
-        background-image: url('../img/mobilemenu_img/gotheextramile-category-450x480-mobile.jpg');
-    }
+.lifeback5{
+    background-image: url("../img/lifestyle_img/lifestyle-bag.jpg");
 }
 
-
-
-
-
-
-
-
-
-.multipanel {
-    box-sizing: border-box;
-    
-    background-color: #252525;
-    padding: 25px 0;
-    margin: 0;
-    max-width: 1920px;
-    margin: 0 auto;
+.lifeback6{
+    background-image: url("../img/lifestyle_img/lifestyle-gear.jpg");
 }
 
-.multipanel > ul {
-    
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 1200px;
-    height: 100%;
-    
-    
+.lifeback7{
+    background-image: url("../img/lifestyle_img/razer-cloth-mask-v2-desktop-cat-banner.jpg");
 }
 
-.multipanel li {
-    width: 100%;
-    margin: 0 10px;
-    
+.lifeback8{
+    background-image: url("../img/lifestyle_img/lifestyle-sneki-snek.jpg");
 }
 
-
-
-.multipanel img {width: 100%;}
-
-
-.multipanel > ul > li > figure > figcaption {
-    
-    display: grid;
-    grid-template-rows: auto 0.5fr 2fr 45px;
-    height: 220px;
-
-    background-color: #111111;
-    border-bottom: 1px solid #44d62c;
-    line-height: 1.5em;
-    
+.lifeback9{
+    background-image: url("../img/lifestyle_img/lifestyle-respawn.jpg");
 }
 
-
-
-.multipanel h3 {
-    color: #fff;
-    
-    margin: 0;
-    padding: 10px;
-    text-align: left;
-    width: 100%;
-}
-
-.multipanel p {
-    text-align: left;
-    font-size: .875rem;
-    font-weight: 300;
-    color: #999;
-    padding: 0 10px;
-}
-
-.multipanel a {
-    color: #44d62c;
-    display: block;
-    font-size: 14px;
-    margin: 0;
-    padding: 10px;
-    text-align: left;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-
-/* ====================================================================================================
-=========================================multipanel 반응형 START============================================
-==================================================================================================== */
-
-@media (max-width:767px) {
-
-    .multipanel {
-        box-sizing: border-box;
-        width: 100%;
-        background-color: #252525;
-        padding: 25px 0;
-        margin: 0;
-    }
-    
-    .multipanel > ul {
-        
-        display: block;
-    
-        margin: 0 auto;
-        
-        
-        
-    }
-    
-    .multipanel li {
-        width: 90%;
-        margin-bottom: 2%;
-        margin: 0 auto;
-        
-    }
-    
-    .multipanel img {width: 100%;}
-    
-    
-    .multipanel > ul > li > figure > figcaption {
-        width: 100%;
-        display: grid;
-        grid-template-rows: auto 0.5fr 2fr 45px;
-        height: 200px;
-    
-        background-color: #111111;
-        border-bottom: 1px solid #44d62c;
-        line-height: 1.5em;
-        margin-bottom: 4%;
-    }
-    
-    
-    
-    .multipanel h3 {
-        color: #fff;
-        
-        margin: 0;
-        padding: 10px;
-        text-align: left;
-        width: 100%;
-    }
-    
-    .multipanel p {
-        color: #888;
-        font-size: 14px;
-        margin: 0;
-        padding: 10px;
-        text-align: left;
-        width: 100%;
-    }
-    
-    .multipanel a {
-        color: #44d62c;
-        display: inline-block;
-        font-size: 14px;
-        margin: 0;
-        padding: 10px;
-        text-align: left;
-        width: 100%;
-    }
-    #nothing {
-        display: none;
-    }
-
-
-
-    /* last_mobilepanel display:none; max-width: 767px */
-
-    .last_mobilepanel li:nth-of-type(3){
-        display: none;
-    }
-}
-
-
-
-
-
-
-/* ====================================================================================================
-=========================================multipanel 반응형 END============================================
-==================================================================================================== */
-
-
-
-.last_mobilepanel li:nth-of-type(3){
-    visibility: hidden;
-}

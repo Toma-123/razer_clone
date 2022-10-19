@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razer_Clone_PC</title>
+    <link href="./css/razer_lifestyle.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" type="image/png" href="./favicomatic/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./favicomatic/favicon-16x16.png" sizes="16x16" />
+</head>
+<body>
+
+<main>
+    <div class="header_container">
+        <header>
+
+            <nav>               
+                <input type="text" name="search" placeholder="Razer.com 검색">
+
+                <a href="./index.html"><img src="./img/logo/razer-ths-logo.svg" alt="로고"></a>
+                <a href="./razer_pc.html">PC</a>
+                <a href="./razer_console.html">콘솔</a>
+                <a href="./razer_mobile.html">모바일</a>
+                <a href="./razer_lifestyle.html">라이프스타일</a>
+                <a href="#">서비스</a>
+                <a href="#">커뮤니티</a>
+                <a href="#">고객지원</a>
+                <a href="#">스토어</a>
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                    search
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                    shopping_cart
+                    </span>
+                </a>
+            </nav>
+            
+            <div class="nav767">
+
+                <button class="trigger-menu">
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <a href="./index.html"><img src="./img/logo/razer-ths-logo.svg" alt="로고"></a>
+
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                    shopping_cart
+                    </span>
+                </a>
+                
+            </div>
+        </header>
+    </div>
+
+<!-- header 767px script -->
+
+<script>
+    // nav, trigger-menu = 클래스 active를 토글형태로 만들어줌
+
+    const header = document.querySelector('header');
+    const triggerMenu = document.querySelector('.trigger-menu');
+
+    triggerMenu.onclick = function(){
+        header.classList.toggle('active');
+        triggerMenu.classList.toggle('active');
+    }
+
+</script>
+
+<!-- header 767px script -->
+
+<section class="mobile_navbar">
+    <div>
+        <ul>
+            <li>
+                <a href="#" id="watch" class="icon_container">
+                    <img src="./img/lifestyle_img/lifestyle_icon/icon-watch.svg" alt="watch_icon">
+                    <div class="icon_label">
+                        컨트롤러
+                    </div>
+                    <div>
+                        New
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" id="apparel" class="icon_container">
+                    <img src="./img/lifestyle_img/lifestyle_icon/icon-apparel.svg" alt="apparel_icon">
+                    <div class="icon_label">
+                        의류
+                    </div>
+                    <div>
+                        New
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" id="bags" class="icon_container">
+                    <img src="./img/lifestyle_img/lifestyle_icon/icon-bags.svg" alt="bags_icon">
+                    <div class="icon_label">
+                        가방
+                    </div>
+                    <div>
+                        New
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" id="gear" class="icon_container">
+                    <img src="./img/lifestyle_img/lifestyle_icon/icon-gear.svg" alt="gear_icon">
+                    <div class="icon_label">
+                        장비
+                    </div>
+                    <div>
+                        New
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" id="sneki" class="icon_container">
+                    <img src="./img/lifestyle_img/lifestyle_icon/icon-sneki.svg" alt="sneki_icon">
+                    <div class="icon_label">
+                        Sneki Snek
+                    </div>
+                    <div>
+                        New
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" id="respawn" class="icon_container">
+                    <img src="./img/lifestyle_img/lifestyle_icon/icon-respawn.svg" alt="respawn_icon">
+                    <div class="icon_label">
+                        RESPAWN
+                    </div>
+                    <div>
+                        New
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" id="collabs" class="icon_container">
+                    <img src="./img/lifestyle_img/lifestyle_icon/icon-collabs.svg" alt="collabs_icon">
+                    <div class="icon_label">
+                        컬래버레이션
+                    </div>
+                    <div>
+                        New
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" id="mac" class="icon_container">
+                    <img src="./img/lifestyle_img/lifestyle_icon/icon-mac.svg" alt="mac_icon">
+                    <div class="icon_label">
+                        mac
+                    </div>
+                    <div>
+                        New
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+</section>
+
+<section class="intro_tag">
+    <div>
+        <div>
+            <h1>
+                LIFESTYLE
+            </h1>
+            
+        </div>
+    </div>
+</section>
+
+<section class="console_item lifeback1">
+    <div>
+        <h2>
+            SNEKI SNEK 애니메이션 시리즈
+        </h2>
+        <p>
+            우리의 사랑스러운 귀염둥이가 계속해서 욕심나시나요? 완전히 새로운 시즌에서 지속 가능성의 중요성을 계속해서 표현하는 SNEKI SNEK과 친구들을 만나보세요!
+        </p>
+        <a href="#">
+            지금 보기 >
+        </a>
+        
+    </div>
+</section>
+
+<section class="console_item lifeback2">
+    <div>
+        <h2>
+            COMPLETE YOUR SETUP
+        </h2>
+        <p>
+            어떤 스타일에도 어울리는 컬러
+        </p>
+        <a href="#">
+            자세한 정보 >
+        </a>
+        
+    </div>
+</section>
+
+<section class="console_item lifeback3">
+    <div>
+        <h2>
+            COLLABS
+        </h2>
+        <p>
+            Razer는 새로운 장비를 선보이기 위해, 우리가 게이머로서 사랑하고 열광하는 다른 브랜드와 협력하고 있습니다.
+        </p>
+        <a href="#">
+            자세한 정보 >
+        </a>
+        
+    </div>
+</section>
+
+<section class="console_item lifeback4">
+    <div>
+        <h2>
+            APPAREL
+        </h2>
+        <p>
+            개성이 강한 반항아 스타일의 게이머를 위해 제작되었습니다. 강력한 기능과 독창적인 디자인이 만나 나를 표현합니다.
+        </p>
+        <a href="#">
+            자세한 정보 >
+        </a>
+        
+    </div>
+</section>
+
+<section class="console_item lifeback5">
+    <div>
+        <h2>
+            BAGS
+        </h2>
+        <p>
+            업무 또는 게임 장비 이동을 위한 백팩으로 장비가 안전하게 보호될 뿐만 아니라 어디를 가든 최고의 퍼포먼스를 즉시 보여줄 수 있도록 디자인되었습니다.
+        </p>
+        <a href="#">
+            자세한 정보 >
+        </a>
+        
+    </div>
+</section>
+
+<section class="console_item lifeback6">
+    <div>
+        <h2>
+            GEAR
+        </h2>
+        <p>
+            누군가에게는 게임이 그저 취미이지만 Razer에게는 삶의 전부입니다. 저희와 같은 생각을 하고 계신다면 다양한 부가 제품으로 일상 생활에서 이를 표현해보세요.
+        </p>
+        <a href="#">
+            자세한 정보 >
+        </a>
+        
+    </div>
+</section>
+
+<section class="console_item lifeback7">
+    <div>
+        <h2>
+            MASKS
+        </h2>
+        <p>
+            안전, 스타일, 편안함. Razer의 다양한 마스크는 일상 생활의 중요하면서도 간편한 부분이 되도록 설계되어 일상적인 보호 기능을 제공하면서 스타일과 착용감도 우수합니다.
+        </p>
+        <a href="#">
+            자세한 정보 >
+        </a>
+        
+    </div>
+</section>
+
+<section class="console_item lifeback8">
+    <div>
+        <h2>
+            SNEKI SNEK
+        </h2>
+        <p>
+            대표 게이밍 마스코트. 전업 환경운동가. 이 귀여운 Razer 캐릭터는 다양한 역할을 맡고 있지만 여러분을 포근하게 안아드립니다.
+        </p>
+        <a href="#">
+            자세한 정보 >
+        </a>
+        
+    </div>
+</section>
+
+<section class="console_item lifeback9">
+    <div>
+        <h2>
+            RESPAWN
+        </h2>
+        <p>
+            가상의 전장에서 가장 중요한 도구는 게이머의 마인드입니다. 멘탈 강화 드링크 믹스나 껌으로 게임에서 최대의 잠재력을 발휘하세요.
+        </p>
+        <a href="#">
+            자세한 정보 >
+        </a>
+        
+    </div>
+</section>
+
+<div class="footer_container">
+    <div class="foot1">           
+        <div id="label_1" class="label_container">
+            <label>쇼핑</label>
+            <ul>
+                <li><a href="">RazerStores</a></li>
+                <li><a href="">RazerCafe</a></li>
+                <li><a href="">매장 찾기 서비스</a></li>
+                <li><a href="">구매 프로그램</a></li>
+                <li><a href="">Exclusives</a></li>
+            </ul>        
+        </div>
+
+        <div id="label_2" class="label_container">
+            <label>둘러보기</label>
+            <ul>
+                <li><a href="">기술</a></li>
+                <li><a href="">Chroma RGB</a></li>
+                <li><a href="">콘셉트</a></li>
+                <li><a href="">e스포츠</a></li>
+                <li><a href="">컬래버레이션</a></li>
+            </ul>        
+        </div>
+
+        <div id="label_3" class="label_container">
+            <label>지원</label>
+            <ul>
+                <li><a href="">도움 받기</a></li>
+                <li><a href="">등록 및 보증</a></li>
+                <li><a href="">RazerStore 지원</a></li>
+                <li><a href="">Razer ID 관리</a></li>
+                <li><a href="">Support Videos</a></li>
+            </ul>        
+        </div>
+
+        <div id="label_4" class="label_container">
+            <label>회사관련</label>
+            <ul>
+                <li><a href="">Razer 소개</a></li>
+                <li><a href="">채용</a></li>
+                <li><a href="">프레스 룸</a></li>
+                <li><a href="">zVentures</a></li>
+                <li><a href="">연락처</a></li>
+            </ul>        
+        </div>
+        
+
+        <div class="SNS_container">
+            <p>FOR GAMERS. BY GAMERS.™</p>
+            <div class="SNS_icon">
+                <img src="./img/SNS_icon/SM0001-facebook.svg">
+                <img src="./img/SNS_icon/SM0003-instagram.svg">
+                <img src="./img/SNS_icon/SM0005-twitter.svg">
+            </div>
+        </div>
+    </div>
+    <div class="end_container">
+        <div class="line"></div>
+                
+        <div class="end">
+                <div class="end_left">
+                    <div>Copyright © 2022 Razer Inc. All rights reserved.</div>
+                    <div><a href="#">법적 약관</a> | <a href="#">개인정보 보호정책</a> | <a href="#">쿠키 정책</a></div>
+                </div>
+                <div>   
+                    <div class="end_right"><a href="#">대한민국</a>  |  <a href="#">Change Location > </a></div>
+                </div>
+        </div>
+    </div>
+
+    
+
+    <div class="SNS_container_767">
+        <p>FOR GAMERS. BY GAMERS.™</p>
+        <div class="SNS_icon">
+            <img src="./img/SNS_icon/SM0001-facebook.svg">
+            <img src="./img/SNS_icon/SM0003-instagram.svg">
+            <img src="./img/SNS_icon/SM0005-twitter.svg">
+        </div>
+    </div>
+
+
+
+</div>   
+
+<script>
+    const footerTrigger = document.querySelectorAll('.label_container')
+    const footList = document.querySelectorAll('.label_container ul')
+    
+    let footIdx=0;
+
+    footerTrigger.forEach(function(value,i){                                //forEach문 사용 
+        value.onclick = function(){
+            if(footIdx==i){
+                this.classList.toggle('active');
+                
+            }else{
+                footerTrigger[footIdx].classList.remove('active');     
+                this.classList.add('active');
+            }
+            footIdx=i;
+    }
+    })
+
+    // for(let i=0; i<footerTrigger.length; i++){
+    //     footerTrigger[i].onclick = function(){
+    //     footerTrigger[i].classList.toggle('active');            
+    // }
+    // }
+
+    // =================== 위에 for문으로 대체 =====================
+
+    // footerTrigger[0].onclick = function(){
+    //     footerTrigger[0].classList.toggle('active');
+    //     footList[0].classList.toggle('active');
+    //     // footIcon[0].classList.toggle('active');
+    // }
+
+    // footerTrigger[1].onclick = function(){
+    //     footerTrigger[1].classList.toggle('active');
+    //     footList[1].classList.toggle('active');
+    // }
+
+    // footerTrigger[2].onclick = function(){
+    //     footerTrigger[2].classList.toggle('active');
+    //     footList[2].classList.toggle('active');
+    // }
+
+    // footerTrigger[3].onclick = function(){
+    //     footerTrigger[3].classList.toggle('active');
+    //     footList[3].classList.toggle('active');
+    // }
+  
+</script>
+
+
+
+
+
+
+</main>
+</body>
+</html>

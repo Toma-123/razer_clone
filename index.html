@@ -20,7 +20,7 @@
 
     <title>Razer_Clone_Home</title>
 
-    <link href="./css/razer_home.css" rel="stylesheet">
+    <link href="./css/razer_index.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="icon" type="image/png" href="./favicomatic/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="./favicomatic/favicon-16x16.png" sizes="16x16" />
@@ -333,20 +333,46 @@
                     </div>
             </div>
         </div>
+
+        
+
+        <div class="SNS_container_767">
+            <p>FOR GAMERS. BY GAMERS.™</p>
+            <div class="SNS_icon">
+                <img src="./img/SNS_icon/SM0001-facebook.svg">
+                <img src="./img/SNS_icon/SM0003-instagram.svg">
+                <img src="./img/SNS_icon/SM0005-twitter.svg">
+            </div>
+        </div>
+
+
+
     </div>   
 
     <script>
         const footerTrigger = document.querySelectorAll('.label_container')
         const footList = document.querySelectorAll('.label_container ul')
         
+        let footIdx=0;
 
+        footerTrigger.forEach(function(value,i){                                //forEach문 사용 
+            value.onclick = function(){
+                if(footIdx==i){
+                    this.classList.toggle('active');
+                    
+                }else{
+                    footerTrigger[footIdx].classList.remove('active');     
+                    this.classList.add('active');
+                }
+                footIdx=i;
+        }
+        })
 
-        for(let i=0; i<footerTrigger.length; i++){
-            footerTrigger[i].onclick = function(){
-            footerTrigger[i].classList.toggle('active');
-            
-        }
-        }
+        // for(let i=0; i<footerTrigger.length; i++){
+        //     footerTrigger[i].onclick = function(){
+        //     footerTrigger[i].classList.toggle('active');            
+        // }
+        // }
 
         // =================== 위에 for문으로 대체 =====================
 

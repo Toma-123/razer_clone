@@ -375,15 +375,13 @@ header input {
 ===================================footer 767 반응형 START ==============================================
 ================================================================================================ */
 
+.SNS_container_767{
+    display: none;
+}
 
 
 @media (max-width:767px) {
     
-
-
-
-
-
 
     .footer_container{
         width: 100%;
@@ -456,9 +454,6 @@ header input {
         display: block;
     }
 
-    .label_container.deactive ul{
-        display: none;
-    }
 
     .label_container li{
         padding-bottom: 0.75rem;
@@ -466,21 +461,17 @@ header input {
     }
     
     .SNS_container {
-        display: flex;
+        display: none;
+        /* display: flex;
         position: absolute;
         justify-content: center;
         bottom: -80%;
         left:0;
         text-align: center;
-        width: 100%;
+        width: 100%; */
 
     }
 
-
-    
-    
-
-   
     .SNS_icon {
         margin-left: 10px;
     }
@@ -530,12 +521,38 @@ header input {
         display:block;
         text-align: center;
         margin-top: 5%;
-        padding-bottom: 30%;
+        padding-bottom: 5%;
     }
     
     .end_right > a {
         color: #fff;
     }
+
+    .SNS_container_767{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .SNS_container_767 {
+        text-align: right;
+        padding-bottom: 5%;
+    }
+    
+    .SNS_container_767 p{
+        font-size: .9rem;
+        letter-spacing: .5px;
+        color: #44d62c;
+        padding-bottom: 5%;
+    }
+    
+    .SNS_container_767 img{
+        width: 1.875rem;
+    }
+
+
+
 }
 
 /* ================================================================================================

@@ -324,7 +324,7 @@
 
     <div class="footer_container">
         <div class="foot1">           
-            <div class="label_container">
+            <div id="label_1" class="label_container">
                 <label>쇼핑</label>
                 <ul>
                     <li><a href="">RazerStores</a></li>
@@ -335,7 +335,7 @@
                 </ul>        
             </div>
     
-            <div class="label_container">
+            <div id="label_2" class="label_container">
                 <label>둘러보기</label>
                 <ul>
                     <li><a href="">기술</a></li>
@@ -346,7 +346,7 @@
                 </ul>        
             </div>
     
-            <div class="label_container">
+            <div id="label_3" class="label_container">
                 <label>지원</label>
                 <ul>
                     <li><a href="">도움 받기</a></li>
@@ -357,7 +357,7 @@
                 </ul>        
             </div>
     
-            <div class="label_container">
+            <div id="label_4" class="label_container">
                 <label>회사관련</label>
                 <ul>
                     <li><a href="">Razer 소개</a></li>
@@ -384,27 +384,53 @@
             <div class="end">
                     <div class="end_left">
                         <div>Copyright © 2022 Razer Inc. All rights reserved.</div>
-                        <div>법적 약관 | 개인정보 보호정책 | 쿠키 정책</div>
+                        <div><a href="#">법적 약관</a> | <a href="#">개인정보 보호정책</a> | <a href="#">쿠키 정책</a></div>
                     </div>
                     <div>   
-                        <div class="end_right"><a href="#">대한민국</a>  |  Change Location > </div>
+                        <div class="end_right"><a href="#">대한민국</a>  |  <a href="#">Change Location > </a></div>
                     </div>
             </div>
         </div>
-    </div>
+
+        
+
+        <div class="SNS_container_767">
+            <p>FOR GAMERS. BY GAMERS.™</p>
+            <div class="SNS_icon">
+                <img src="./img/SNS_icon/SM0001-facebook.svg">
+                <img src="./img/SNS_icon/SM0003-instagram.svg">
+                <img src="./img/SNS_icon/SM0005-twitter.svg">
+            </div>
+        </div>
+
+
+
+    </div>   
 
     <script>
         const footerTrigger = document.querySelectorAll('.label_container')
         const footList = document.querySelectorAll('.label_container ul')
         
+        let footIdx=0;
 
+        footerTrigger.forEach(function(value,i){                                //forEach문 사용 
+            value.onclick = function(){
+                if(footIdx==i){
+                    this.classList.toggle('active');
+                    
+                }else{
+                    footerTrigger[footIdx].classList.remove('active');     
+                    this.classList.add('active');
+                }
+                footIdx=i;
+        }
+        })
 
-        for(let i=0; i<footerTrigger.length; i++){
-            footerTrigger[i].onclick = function(){
-            footerTrigger[i].classList.toggle('active');
-            
-        }
-        }
+        // for(let i=0; i<footerTrigger.length; i++){
+        //     footerTrigger[i].onclick = function(){
+        //     footerTrigger[i].classList.toggle('active');            
+        // }
+        // }
 
         // =================== 위에 for문으로 대체 =====================
 

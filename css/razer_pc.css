@@ -1,6 +1,9 @@
 @import url(../css/rezer_common.css);
 
-main{background-color: #000; width: 100%; }
+main{
+    width: 100%;
+    background-color: #111111;
+}
 
 header > nav > a:nth-of-type(2) {
     color:#fff;

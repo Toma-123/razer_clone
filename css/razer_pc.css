@@ -349,6 +349,7 @@ header > nav > a:nth-of-type(2) {
 .pc_contents1 a {
     color: #44d62c;
     text-align: center;
+    margin-top: 5%;
 }
 
 .pc_contents1 img {

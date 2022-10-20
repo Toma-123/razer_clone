@@ -118,6 +118,7 @@ header > nav > a:hover{
     border: none;
     position: relative;
     padding:0 3%;
+    outline: none;
 }
 
 .hidden_src .X_button{

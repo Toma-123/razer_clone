@@ -13,14 +13,24 @@
 </head>
 <body>
 <main>
+
     <div class="header_container">
         <header>
-
+            
             <nav>
                 
-                <input type="text" name="search" placeholder="Razer.com 검색">
-
+                <!-- 모바일 검색바 -->
+                <input class="mobile_srcbar" type="text" name="search" placeholder="Razer.com 검색">
                 
+                <!-- 데스크탑 검색바 -->
+                <div class="hidden_src">
+                    
+                    <input type="text" name="hidden_search" placeholder="Razer.com 검색">
+                    <button class="X_button">
+                        <img src="./img/mobilemenu_img/X_icon3.png">
+                    </button>
+                </div>
+    
 
 
                 <a href="./index.html"><img src="./img/logo/razer-ths-logo.svg" alt="로고"></a>
@@ -32,12 +42,12 @@
                 <a href="#">커뮤니티</a>
                 <a href="#">고객지원</a>
                 <a href="#">스토어</a>
-                <a href="#">
+                <a href="#" class="search_Icon">
                     <span class="material-symbols-outlined">
                     search
                     </span>
                 </a>
-                <a href="#">
+                <a href="">
                     <span class="material-symbols-outlined">
                     shopping_cart
                     </span>
@@ -62,6 +72,20 @@
             </div>
         </header>
     </div>
+
+    <script>
+        const search_Trg = document.querySelector('.search_Icon')
+        const search_Bar = document.querySelector('.hidden_src')
+        const xIcon = document.querySelector('.X_button')
+        
+        search_Trg.addEventListener('click',function(){
+            search_Bar.classList.add('active')
+        })
+
+        xIcon.addEventListener('click', function(){
+            search_Bar.classList.remove('active')
+        })
+    </script>    
 
 <!-- header 767px script -->
 

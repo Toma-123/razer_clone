@@ -16,25 +16,38 @@
 <main>
     <div class="header_container">
         <header>
-
-            <nav>               
-                <input type="text" name="search" placeholder="Razer.com 검색">
+            
+            <nav>
                 
+                <!-- 모바일 검색바 -->
+                <input class="mobile_srcbar" type="text" name="search" placeholder="Razer.com 검색">
+                
+                <!-- 데스크탑 검색바 -->
+                <div class="hidden_src">
+                    
+                    <input type="text" name="hidden_search" placeholder="Razer.com 검색">
+                    <button class="X_button">
+                        <img src="./img/mobilemenu_img/X_icon3.png">
+                    </button>
+                </div>
+    
+
+
                 <a href="./index.html"><img src="./img/logo/razer-ths-logo.svg" alt="로고"></a>
                 <a href="./razer_pc.html">PC</a>
                 <a href="./razer_console.html">콘솔</a>
                 <a href="./razer_mobile.html">모바일</a>
-                <a href="#">라이프스타일</a>
+                <a href="./razer_lifestyle.html">라이프스타일</a>
                 <a href="#">서비스</a>
                 <a href="#">커뮤니티</a>
                 <a href="#">고객지원</a>
                 <a href="#">스토어</a>
-                <a href="#">
+                <a href="#" class="search_Icon">
                     <span class="material-symbols-outlined">
                     search
                     </span>
                 </a>
-                <a href="#">
+                <a href="">
                     <span class="material-symbols-outlined">
                     shopping_cart
                     </span>
@@ -60,6 +73,20 @@
         </header>
     </div>
 
+    <script>
+        const search_Trg = document.querySelector('.search_Icon')
+        const search_Bar = document.querySelector('.hidden_src')
+        const xIcon = document.querySelector('.X_button')
+        
+        search_Trg.addEventListener('click',function(){
+            search_Bar.classList.add('active')
+        })
+
+        xIcon.addEventListener('click', function(){
+            search_Bar.classList.remove('active')
+        })
+    </script>    
+
 <!-- header 767px script -->
 
 <script>
@@ -75,42 +102,6 @@
 
 </script>
 <!-- header 767px script -->
-
-
-
-
-    <div class="subnavbar">
-        <nav>
-            <button class="subnavbar_pcbar_trigger">
-                <span>PC</span>
-                <span>▼</span>
-            </button>
-            
-            <ul>
-                <li><a href="#">데스크톱&구성 요소</a></li>
-                <li><a href="#">마우스</a></li>
-                <li><a href="#">패드</a></li>
-                <li><a href="#">키보드</a></li>
-                <li><a href="#">오디오</a></li>
-                <li><a href="#">스피커</a></li>
-                <li><a href="#">스트리밍</a></li>
-                <li><a href="#">생산성</a></li>
-                <li><a href="#">소프트웨어</a></li>
-            </ul>
-        </nav>
-    </div>
-
-    <script>
-
-        const navBar = document.querySelector('.subnavbar ul');
-        const trigger = document.querySelector('.subnavbar_pcbar_trigger');
-
-        trigger.onclick = function(){
-            navBar.classList.toggle('active');
-            trigger.classList.toggle('active');
-        }
-
-    </script>
 
 
     <div class="intro_section">

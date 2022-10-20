@@ -13,70 +13,95 @@
 </head>
 <body>
     <main>
+
+
         <div class="header_container">
-            <header>
-    
-                <nav>
-                    
-                    <input type="text" name="search" placeholder="Razer.com 검색">
-    
-                    
-    
-    
-                    <a href="./index.html"><img src="./img/logo/razer-ths-logo.svg" alt="로고"></a>
-                    <a href="./razer_pc.html">PC</a>
-                    <a href="./razer_console.html">콘솔</a>
-                    <a href="./razer_mobile.html">모바일</a>
-                    <a href="./razer_lifestyle.html">라이프스타일</a>
-                    <a href="#">서비스</a>
-                    <a href="#">커뮤니티</a>
-                    <a href="#">고객지원</a>
-                    <a href="#">스토어</a>
-                    <a href="#">
-                        <span class="material-symbols-outlined">
-                        search
-                        </span>
-                    </a>
-                    <a href="#">
-                        <span class="material-symbols-outlined">
-                        shopping_cart
-                        </span>
-                    </a>
-                </nav>
+        <header>
+            
+            <nav>
                 
-                <div class="nav767">
-    
-                    <button class="trigger-menu">
-                        <span></span>
-                        <span></span>
-                    </button>
-    
-                    <a href="./index.html"><img src="./img/logo/razer-ths-logo.svg" alt="로고"></a>
-    
-                    <a href="#">
-                        <span class="material-symbols-outlined">
-                        shopping_cart
-                        </span>
-                    </a>
+                <!-- 모바일 검색바 -->
+                <input class="mobile_srcbar" type="text" name="search" placeholder="Razer.com 검색">
+                
+                <!-- 데스크탑 검색바 -->
+                <div class="hidden_src">
                     
+                    <input type="text" name="hidden_search" placeholder="Razer.com 검색">
+                    <button class="X_button">
+                        <img src="./img/mobilemenu_img/X_icon3.png">
+                    </button>
                 </div>
-            </header>
-        </div>
     
-    <!-- header 767px script -->
+
+
+                <a href="./index.html"><img src="./img/logo/razer-ths-logo.svg" alt="로고"></a>
+                <a href="./razer_pc.html">PC</a>
+                <a href="./razer_console.html">콘솔</a>
+                <a href="./razer_mobile.html">모바일</a>
+                <a href="./razer_lifestyle.html">라이프스타일</a>
+                <a href="#">서비스</a>
+                <a href="#">커뮤니티</a>
+                <a href="#">고객지원</a>
+                <a href="#">스토어</a>
+                <a href="#" class="search_Icon">
+                    <span class="material-symbols-outlined">
+                    search
+                    </span>
+                </a>
+                <a href="">
+                    <span class="material-symbols-outlined">
+                    shopping_cart
+                    </span>
+                </a>
+            </nav>
+            
+            <div class="nav767">
+
+                <button class="trigger-menu">
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <a href="./index.html"><img src="./img/logo/razer-ths-logo.svg" alt="로고"></a>
+
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                    shopping_cart
+                    </span>
+                </a>
+                
+            </div>
+        </header>
+    </div>
 
     <script>
-        // nav, trigger-menu = 클래스 active를 토글형태로 만들어줌
+        const search_Trg = document.querySelector('.search_Icon')
+        const search_Bar = document.querySelector('.hidden_src')
+        const xIcon = document.querySelector('.X_button')
+        
+        search_Trg.addEventListener('click',function(){
+            search_Bar.classList.add('active')
+        })
 
-        const header = document.querySelector('header');
-        const triggerMenu = document.querySelector('.trigger-menu');
+        xIcon.addEventListener('click', function(){
+            search_Bar.classList.remove('active')
+        })
+    </script>    
 
-        triggerMenu.onclick = function(){
-            header.classList.toggle('active');
-            triggerMenu.classList.toggle('active');
-        }
+<!-- header 767px script -->
 
-    </script>
+<script>
+    // nav, trigger-menu = 클래스 active를 토글형태로 만들어줌
+
+    const header = document.querySelector('header');
+    const triggerMenu = document.querySelector('.trigger-menu');
+
+    triggerMenu.onclick = function(){
+        header.classList.toggle('active');
+        triggerMenu.classList.toggle('active');
+    }
+
+</script>
 <!-- header 767px script -->
     
 

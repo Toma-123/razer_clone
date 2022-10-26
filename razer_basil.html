@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Razer_Clone_Basilisk</title>
     <link href="./css/razer_basil.css" rel="stylesheet">
+    <script defer src="./js/razer_basil.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="icon" type="image/png" href="./favicomatic/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="./favicomatic/favicon-16x16.png" sizes="16x16" />
+
 
 
 </head>
@@ -152,8 +154,8 @@
     <section class="basil_awards">
         <div>
             <h1>RAZER BASILISK V3 PRO</h1>
-            <h2>가장 진보된 최고급 게이밍 마우스</h2>
-            <p>여러분의 게임을 업그레이드해줄 왕의 귀환 Razer Basilisk V3 Pro.
+            <h2 class="upword">가장 진보된 최고급 게이밍 마우스</h2>
+            <p class="upword">여러분의 게임을 업그레이드해줄 왕의 귀환 Razer Basilisk V3 Pro.
                 가장 진보된 최고급 게이밍 마우스 Razer Basilisk V3 Pro를 만나보세요. 
                 업계 최고의 기술로 무장한 성능, 커스터마이징, 연결성 및 제어의 한계를 뛰어넘어 최대의 잠재력을 발휘해보세요.
             </p>
@@ -174,9 +176,48 @@
 
     </section>
 
+    <style>
+        .upword{
+            opacity: 0;
+            transform: translateY(100px);
+            transition: 1s;
+        }
+
+        .upword.active{
+            opacity: 1;
+            transform: translateY(0%);
+        }
+
+        .upword2{
+            opacity: 0;
+            transform: translateY(100px);
+            transition: 1s;
+        }
+
+        .upword2.active{
+            opacity: 1;
+            transform: translateY(0%);
+        }
+
+
+    </style>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
     <section class="introvideo_container">              
         <iframe width="100%" height="650px" src="https://www.youtube.com/embed/cUxzYlSFalA" 
-        title="YouTube video player" frameborder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen >
+        title="YouTube video player" frameborder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen >
         </iframe>       
     </section>
 
@@ -185,7 +226,7 @@
     
     <section class="graph_container">
         <div>
-            <h2>예상을 넘어서는 속성, 강력한 성능</h2>
+            <h2 class="upword">예상을 넘어서는 속성, 강력한 성능</h2>
             <picture>
                 <source media ="(max-width:767px)" srcset="./img/basil_img/mobile_img/razer-basilisk-v3-pro-insane-attributes-mobile-v3.jpg">
                 <img src="./img/basil_img/razer-basilisk-v3-pro-insane-attributes-desktop-v3.png" alt="">
@@ -247,9 +288,9 @@
 
     <section class="wheel_container">
         <div>
-            <h2>RAZER™ HYPERSCROLL 틸트 휠</h2>
-            <h3>부드러운 프리 스핀 스크롤링 또는 택타일 사이클링</h3>
-            <p>콘텐츠를 빠르게 넘기기 위해 스크롤 휠을 멈출 때까지 자유롭게 회전하거나, 무기 또는 스킬 선택에 이상적인 더 정확하고 확실한 피드백의 택타일 모드로 전환이 가능합니다.</p>
+            <h2 class="upword">RAZER™ HYPERSCROLL 틸트 휠</h2>
+            <h3 class="upword">부드러운 프리 스핀 스크롤링 또는 택타일 사이클링</h3>
+            <p class="upword">콘텐츠를 빠르게 넘기기 위해 스크롤 휠을 멈출 때까지 자유롭게 회전하거나, 무기 또는 스킬 선택에 이상적인 더 정확하고 확실한 피드백의 택타일 모드로 전환이 가능합니다.</p>
         </div>
 
         <div class="wheel_video_container">
@@ -265,29 +306,29 @@
                 <li>
                     <div>
                         <video class="icons-video" src="//assets2.razerzone.com/pages/basilisk-v3-4D578898E8144Le8da21dde32b7a9f5f/tactile.mp4" allow="autoplay" muted="" playsinline="" played="true" autoplay="" loop="" pnxssr_7="" style="transform: translate(0px, 0px); opacity: 1;"></video>
-                        <h3>택타일 사이클링 모드</h3>
-                        <p>매우 정밀하고 독특한 노치 스크롤링으로 무기 또는 스킬을 전환하는 데 이상적입니다.</p>
+                        <h3 class="upword">택타일 사이클링 모드</h3>
+                        <p class="upword">매우 정밀하고 독특한 노치 스크롤링으로 무기 또는 스킬을 전환하는 데 이상적입니다.</p>
                     </div>
                 </li>
                 <li>
                     <div>
                         <video class="icons-video" src="//assets2.razerzone.com/pages/basilisk-v3-4D578898E8144Le8da21dde32b7a9f5f/smart-reel.mp4" allow="autoplay" muted="" playsinline="" played="true" autoplay="" loop="" pnxssr_17="" style="transform: translate(0px, 0px); opacity: 1;"></video>
-                        <h3>스마트 릴 모드</h3>
-                        <p>더 빠르게 스크롤할 때 Razer Synapse를 통해 활성화된 스크롤 휠이 택타일 모드에서 프리 스핀 모드로 자동 전환됩니다.</p>
+                        <h3 class="upword">스마트 릴 모드</h3>
+                        <p class="upword">더 빠르게 스크롤할 때 Razer Synapse를 통해 활성화된 스크롤 휠이 택타일 모드에서 프리 스핀 모드로 자동 전환됩니다.</p>
                     </div>
                 </li>
                 <li>
                     <div>
                         <video class="icons-video" src="//assets2.razerzone.com/pages/basilisk-v3-4D578898E8144Le8da21dde32b7a9f5f/free-spin.mp4" allow="autoplay" muted="" playsinline="" played="true" autoplay="" loop="" pnxssr_27="" style="transform: translate(0px, 0px); opacity: 1;"></video>
-                        <h3>프리 스핀 스크롤링 모드</h3>
-                        <p>매끄러운 고속 스크롤링으로 콘텐츠를 신속하게 다루거나 반복되는 게임 명령을 에뮬레이션하는 데 적절합니다.</p>
+                        <h3 class="upword">프리 스핀 스크롤링 모드</h3>
+                        <p class="upword">매끄러운 고속 스크롤링으로 콘텐츠를 신속하게 다루거나 반복되는 게임 명령을 에뮬레이션하는 데 적절합니다.</p>
                     </div>
                 </li>
                 <li>
                     <div>
                         <video class="icons-video" src="//assets2.razerzone.com/pages/basilisk-v3-4D578898E8144Le8da21dde32b7a9f5f/virtual-acceleration.mp4" allow="autoplay" muted="" playsinline="" played="true" autoplay="" loop="" pnxssr_37="" style="transform: translate(0px, 0px); opacity: 1;"></video>
-                        <h3>가상의 가속</h3>
-                        <p>Razer Synapse 기능을 켜면 더 빠르게 스크롤할 때 마우스 스크롤 속도를 높일 수 있어 길이가 긴 문서와 글을 훨씬 더 빠른 속도로 살펴볼 수 있습니다.</p>
+                        <h3 class="upword">가상의 가속</h3>
+                        <p class="upword">Razer Synapse 기능을 켜면 더 빠르게 스크롤할 때 마우스 스크롤 속도를 높일 수 있어 길이가 긴 문서와 글을 훨씬 더 빠른 속도로 살펴볼 수 있습니다.</p>
                     </div>
                 </li>
             </ul>
@@ -296,22 +337,22 @@
 
     <section class="chroma_container">
         <div>
-            <h2>풀 언더글로우를 포함한 13개의 CHROMA 조명 영역</h2>
-            <h3>Razer Chroma™ RGB 지원</h3>
-            <p>1,680만 개가 넘는 컬러와 수많은 조명 효과로 각 영역을 커스터마이징하고 수백 가지의 Chroma 연동 게임과 동적으로 반응하며 제공하는 높은 몰입감을 경험하세요.</p>
+            <h2 class="upword">풀 언더글로우를 포함한 13개의 CHROMA 조명 영역</h2>
+            <h3 class="upword">Razer Chroma™ RGB 지원</h3>
+            <p class="upword">1,680만 개가 넘는 컬러와 수많은 조명 효과로 각 영역을 커스터마이징하고 수백 가지의 Chroma 연동 게임과 동적으로 반응하며 제공하는 높은 몰입감을 경험하세요.</p>
             <a href="">자세히 알아보기></a>
         </div>
 
         <div>
             <ul>
                 <li>
-                    <h3>개별 프로그래밍이 가능한 13개의 LED</h3>
+                    <h3 class="upword">개별 프로그래밍이 가능한 13개의 LED</h3>
                 </li>
                 <li>
-                    <h3>200개 이상의 CHROMA 연동 게임</h3>
+                    <h3 class="upword">200개 이상의 CHROMA 연동 게임</h3>
                 </li>
                 <li>
-                    <h3>1,680만 색상 옵션</h3></3>
+                    <h3 class="upword">1,680만 색상 옵션</h3></3>
                 </li>
             </ul>
         </div>
@@ -329,9 +370,9 @@
 
     <section class="chroma_container"> 
         <div>
-            <h2>여러 기기 페어링을 지원하는 RAZER™ HYPERSPEED WIRELESS</h2>
-            <h3>고성능, 저지연 게이밍</h3>
-            <p>다른 무선 기술보다 25% 더 빠른 속도로 초반응형 게이밍을 선사합니다. 최신 Razer HyperSpeed 주변기기에 적용된 기능으로 무선 마우스와 키보드를 하나의 동글에 연결해서 사용할 수 있어 셋업을 효율적으로 정리하고 더 많은 USB 포트를 활용할 수 있습니다.</p>
+            <h2 class="upword2">여러 기기 페어링을 지원하는 RAZER™ HYPERSPEED WIRELESS</h2>
+            <h3 class="upword2">고성능, 저지연 게이밍</h3>
+            <p class="upword2">다른 무선 기술보다 25% 더 빠른 속도로 초반응형 게이밍을 선사합니다. 최신 Razer HyperSpeed 주변기기에 적용된 기능으로 무선 마우스와 키보드를 하나의 동글에 연결해서 사용할 수 있어 셋업을 효율적으로 정리하고 더 많은 USB 포트를 활용할 수 있습니다.</p>
             <a href="">자세히 알아보기></a>
         </div>
 
@@ -342,14 +383,14 @@
 
     <section class="video3_container">
         <div>
-            <h2>인체 공학적 형태</h2>
+            <h2 class="upword2">인체 공학적 형태</h2>
         </div>
 
         <ul class="video3_ul">
             <li>
                 <video class="icons-video" src="//assets2.razerzone.com/images/pnx.assets/6f43c2ca4f92cfc451664f8b4dc2707f/-razer-basilisk-v3-pro-programmable-buttons.mp4" allow="autoplay" muted="" playsinline="" played="true" autoplay="" loop="" pnxssr_9="" style="transform: translate(0px, 0px); opacity: 1;"></video>
                 
-                <h3>프로그래밍 가능한 10+1개 버튼을 지원하는 상징적인 인체공학적 형태</h3>
+                <h3 class="upword2">프로그래밍 가능한 10+1개 버튼을 지원하는 상징적인 인체공학적 형태</h3>
                 <strong>최첨단 인체공학 및 제어</strong>
                 <p>전 세계 수백만 명의 사랑을 받는 이 마우스의 시그니처 모양은 다양한 그립을 완벽하게 지원하며, 수많은 버튼에 쉽게 액세스하여 명령과 매크로를 끝없이 조합할 수 있습니다.</p>
                 
@@ -358,7 +399,7 @@
             <li>
                 <video class="icons-video" src="//assets2.razerzone.com/images/pnx.assets/6f43c2ca4f92cfc451664f8b4dc2707f/razer-basilisk-v3-pro-focus-pro-30k-sensor.mp4" allow="autoplay" muted="" playsinline="" played="true" autoplay="" loop="" pnxssr_20="" style="transform: translate(0px, 0px); opacity: 1;"></video>
                 
-                <h3>RAZER™ FOCUS PRO 30K 옵티컬 센서</h3>
+                <h3 class="upword2">RAZER™ FOCUS PRO 30K 옵티컬 센서</h3>
                 <strong>동급 최고의 정확도</strong>
                 <p>업계를 선도하는 Razer의 센서는 지능형 기능으로 뛰어난 조준과 제어를 지원하여 유리 등의 다양한 표면에서 완벽한 트래킹 성능을 자랑합니다.</p>
                 
@@ -366,7 +407,7 @@
             <li>
                 <video class="icons-video" src="//assets2.razerzone.com/images/pnx.assets/6f43c2ca4f92cfc451664f8b4dc2707f/razer-basilisk-v3-pro-optical-mouse-switches-gen-3.mp4" allow="autoplay" muted="" playsinline="" played="true" autoplay="" loop="" pnxssr_31="" style="transform: translate(0px, 0px); opacity: 1;"></video>
                 
-                <h3>3세대 RAZERTRADE; 옵티컬 마우스 스위치</h3>
+                <h3 class="upword2">3세대 RAZERTRADE; 옵티컬 마우스 스위치</h3>
                 <strong>탁월한 내구성 및 속도</strong>
                 <p>의도하지 않은 더블 클릭 문제가 발생하지 않는 우수한 9천만 회의 클릭 수명부터 제로 디바운스 지연을 자랑하는 0.2밀리초의 빠른 작동 속도까지, 다른 어떤 제품보다 안정성과 속도가 뛰어납니다.</p>
                 
@@ -379,9 +420,9 @@
 
     <section class="wireless_charging_container">
         <div>
-            <h2>차세대 무선 충전으로 업그레이드</h2>
-            <h3>RAZER 무선 충전기 및 기타 QI 충전기와 호환 가능</h3>
-            <p>다음 장치(모두 별도 판매)와 페어링하여 끊김 없이 편리하게 충전할 수 있는 Razer Basilisk V3 Pro의 진정한 성능을 경험하세요.</p>
+            <h2 class="upword2">차세대 무선 충전으로 업그레이드</h2>
+            <h3 class="upword2">RAZER 무선 충전기 및 기타 QI 충전기와 호환 가능</h3>
+            <p class="upword2">다음 장치(모두 별도 판매)와 페어링하여 끊김 없이 편리하게 충전할 수 있는 Razer Basilisk V3 Pro의 진정한 성능을 경험하세요.</p>
             
             
             <a href="//www.razer.com/kr-kr/gaming-mice-accessories/razer-mouse-dock-pro" title="RAZER 마우스 도크 프로" pnxssr_8="">자세히 알아보기 &gt;</a>
@@ -391,13 +432,13 @@
         <div class="wireless_ul_container">
             <ul>
                 <li>
-                    <h3>RAZER 마우스 도크 프로</h3>
-                    <p>Razer 무선 충전 리시버 포함</p>
+                    <h3 class="upword2">RAZER 마우스 도크 프로</h3>
+                    <p class="upword2">Razer 무선 충전 리시버 포함</p>
                 </li>
 
                 <li>
-                    <h3>RAZER 무선 충전 리시버</h3>
-                    <p>Qi 인증을 받은 디자인, 기타 Qi 충전기와 사용 가능</p>
+                    <h3 class="upword2">RAZER 무선 충전 리시버</h3>
+                    <p class="upword2">Qi 인증을 받은 디자인, 기타 Qi 충전기와 사용 가능</p>
                 </li>
 
             </ul>
@@ -414,7 +455,7 @@
         <div class="warranty_image_container">
             <img src="./img/basil_img/mobile_img/warranty-panel-2-years-mobile.jpg" alt="warranty">
         </div>
-        <div>
+        <div class="upword2">
             <h2>보증 지원</h2>
             <p><a href="#">여기</a>에서 최대 2년간의 보증을 획득하고 믿을 수 있는 기술 지원에 액세스하세요. RazerStore에서 직접 구매하면 14일 동안 무료로 반품이 가능합니다.</p>
         </div>
@@ -424,9 +465,9 @@
         <div>
             <img src="./img/basil_img/mobile_img/en_sneaky_mobile_768x460.jpg" alt="gamer">
 
-            <div>
-                <h2>FOR GAMERS. BY GAMERS.</h2>
-                <p>#WinItYourWay를 실현하는 하드웨어에 담긴 동기를 확인해보세요.</p>
+            <div >
+                <h2 class="upword2">FOR GAMERS. BY GAMERS.</h2>
+                <p class="upword2">#WinItYourWay를 실현하는 하드웨어에 담긴 동기를 확인해보세요.</p>
                 <a href="#">자세히 알아보기></a>
             </div>
         </div>
@@ -485,6 +526,7 @@
         </div>
 
     </section>
+
 
     <div class="footer_container">
         <div class="foot1">           

@@ -220,6 +220,7 @@ main{
     position: relative;
     scroll-snap-type: x mandatory;
     scroll-snap-align: center;
+    
 }
 
 
@@ -350,6 +351,11 @@ main{
 ======================= store_icon_container 반응형 START ========================== */
 
 @media(max-width:767px){
+
+    .for_store_footer{
+        background-color: #111;
+        padding-top: 0px;
+    }
     .store_icon_container{
         width: 100%;
         padding-top: 100px;
@@ -471,6 +477,7 @@ main{
         max-width: 1920px;
         background-color: #000;
         margin: 0 auto;
+        /* margin-left: 30px; */
     }
     
     .slide_container > div {
@@ -595,6 +602,7 @@ main{
     
     
     .pr_slide > ul {
+        
         position: relative;
         width: 100%;
         max-width: 1200px;
@@ -607,6 +615,7 @@ main{
         
         overflow-x: scroll;
         scroll-snap-type: x mandatory;
+        
         
     }
     
@@ -622,6 +631,7 @@ main{
         justify-content: center;
         text-align: left;
         scroll-snap-align: center;
+        
         
     }
     

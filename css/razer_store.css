@@ -1,5 +1,9 @@
 @import url('./rezer_common.css');
 
+header > nav > a:nth-of-type(9) {
+    color:#fff;
+}
+
 main{
     width: 100%;
     background-color: #000;
@@ -206,7 +210,9 @@ main{
     background-repeat: no-repeat;
 }
 
-
+.right_button,.right_button2,.right_button3,.left_button, .left_button2,.left_button3{
+    cursor: pointer;
+}
 
 
 .pr_slide > ul {

@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razer_Clone_Store</title>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" type="image/png" href="./favicomatic/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./favicomatic/favicon-16x16.png" sizes="16x16" />
+    <link href="./css/razer_store.css" rel="stylesheet">
+    <script defer src="./js/razer_store.js"></script>
+
+</head>
+<body>
+<main>
+    <div class="header_container">
+        <header>
+            
+            <nav>
+                
+                <!-- 모바일 검색바 -->
+                <input class="mobile_srcbar" type="text" name="search" placeholder="Razer.com 검색">
+                
+                <!-- 데스크탑 검색바 -->
+                <div class="hidden_src">
+                    
+                    <input type="text" name="hidden_search" placeholder="Razer.com 검색">
+                    <button class="X_button">
+                        <img src="./img/mobilemenu_img/X_icon3.png">
+                    </button>
+                </div>
+    
+
+
+                <a href="./index.html"><img src="./img/logo/razer-ths-logo.svg" alt="로고"></a>
+                <a href="./razer_pc.html">PC</a>
+                <a href="./razer_console.html">콘솔</a>
+                <a href="./razer_mobile.html">모바일</a>
+                <a href="./razer_lifestyle.html">라이프스타일</a>
+                <a href="#">서비스</a>
+                <a href="#">커뮤니티</a>
+                <a href="#">고객지원</a>
+                <a href="./razer_store.html">스토어</a>
+                <a href="#" class="search_Icon">
+                    <span class="material-symbols-outlined">
+                    search
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                    shopping_cart
+                    </span>
+                </a>
+            </nav>
+            
+            <div class="nav767">
+
+                <button class="trigger-menu">
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <a href="./index.html"><img src="./img/logo/razer-ths-logo.svg" alt="로고"></a>
+
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                    shopping_cart
+                    </span>
+                </a>
+                
+            </div>
+        </header>
+    </div>
+
+    <script>
+        const search_Trg = document.querySelector('.search_Icon')
+        const search_Bar = document.querySelector('.hidden_src')
+        const xIcon = document.querySelector('.X_button')
+        
+        search_Trg.addEventListener('click',function(){
+            search_Bar.classList.add('active')
+        })
+
+        xIcon.addEventListener('click', function(){
+            search_Bar.classList.remove('active')
+        })
+
+        
+    </script>    
+
+<!-- header 767px script -->
+
+<script>
+    // nav, trigger-menu = 클래스 active를 토글형태로 만들어줌
+
+    const header = document.querySelector('header');
+    const triggerMenu = document.querySelector('.trigger-menu');
+
+    triggerMenu.onclick = function(){
+        header.classList.toggle('active');
+        triggerMenu.classList.toggle('active');
+    };
+
+</script>
+<!-- header 767px script -->
+
+    <section class="store_icon_container">
+        <div>
+            <ul>
+                <li>
+                    <img src="./img/store_img/razer-store-v2_components_icon_188x150.png" alt="">
+                    <p>구성요소</p>
+                </li>
+                <li>
+                    <img src="./img/store_img/basilisk_2x.png" alt="">
+                    <p>마우스</p>
+                </li>
+                <li>
+                    <img src="./img/store_img/tenkeyless_2x.png" alt="">
+                    <p>키보드</p>
+                </li>
+                <li>
+                    <img src="./img/store_img/razer-store-v2_audio_icon_168x150.png" alt="">
+                    <p>오디오</p>
+                </li>
+                <li>
+                    <img src="./img/store_img/razer-store-v2_streaming_icon_118x150.png" alt="">
+                    <p>스트리밍</p>
+                </li>
+                <li>
+                    <img src="./img/store_img/wolverine_2x.png" alt="">
+                    <p>콘솔</p>
+                </li>
+                <li>
+                    <img src="./img/store_img/kishi_2x.png" alt="">
+                    <p>모바일</p>
+                </li>
+                <li>
+                    <img src="./img/store_img/rogue-15-chromatic_2x.png" alt="">
+                    <p>장비</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+
+
+    <section class="title_container">
+        <div>
+            <h2>최고의 최신 게이밍 장비</h2>
+            <p>RAZER 마우스, 키보드, 헤드셋, 노트북 등</p>
+        </div>
+    </section>
+
+
+
+
+    <section class="slide_container">
+        <div>
+            <div class="h3_container">
+                <h3>새로운 제품군</h3>
+                <h4>최신 제품을 확인하여 셋업을 최신 상태로 업그레이드하세요</h4>
+            </div>
+
+            <div class="pr_slide">
+                <div class="left_button"></div>
+                <div class="right_button"></div>
+                <ul class="slide_ul">
+                    <li>
+                        <figure>
+                            <img src="./img/store_img/razer-deathstalker-v2-pro-tenkeyless-white-500x500.png" alt="">
+                            <figcaption>
+                                <h5>Razer DeathStalker V2 Pro Tenkeyless - Linear Optical Switch - US - White</h5>
+                                <p>무선 로우 프로파일 RGB 텐키리스 옵티컬 키보드</p>
+                                <div>
+                                    <p>285,000원</p>
+                                    <a href="#">구입</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/store_img/huntsman-tkl-quartz-gallery_500x500.png" alt="">
+                            <figcaption>
+                                <h5>Razer Huntsman V2 Tenkeyless - Linear Optical Switch - US - Quartz</h5>
+                                <p>텐키리스 옵티컬 게이밍 키보드</p>
+                                <div>
+                                    <p>208,000원</p>
+                                    <a href="#">구입</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/store_img/razer-blackshark-v2-x-quartz-500x500.png" alt="">
+                            <figcaption>
+                                <h5>Razer BlackShark V2 X - Quartz</h5>
+                                <p>USB사운드 카드장착된 멀티 플랫폼 유선 e스포츠 헤드셋</p>
+                                <div>
+                                    <p>91,000원</p>
+                                    <a href="#">구입</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/store_img/razer-barracuda-quartz_500x500.png" alt="">
+                            <figcaption>
+                                <h5>Razer Barracuda - Quartz</h5>
+                                <p>무선 멀티 플랫폼 게이밍 및 모바일용 헤드셋</p>
+                                <div>
+                                    <p>235,000원</p>
+                                    <a href="#">구입</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/store_img/razer-deathstalker-v2-pro-tenkeyless-white-500x500.png" alt="">
+                            <figcaption>
+                                <h5>Razer Orochi V2 - Quartz</h5>
+                                <p>최대 950시간 배터리 수명의 모바일 무선 게이밍 마우스</p>
+                                <div>
+                                    <p>89,000원</p>
+                                    <a href="#">구입</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/store_img/razer-strider-quartz-edition-500x500.png" alt="">
+                            <figcaption>
+                                <h5>Razer Strider - Large - Quartz</h5>
+                                <p>연질의 바닥과 부드러운 움직임이 특징인 하이브리드 마우스 패드</p>
+                                <div>
+                                    <p>39,000원</p>
+                                    <a href="#">구입</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/store_img/razer-basilisk-v3-pro-white_500x500.png" alt="">
+                            <figcaption>
+                                <h5>Razer Basilisk V3 Pro - White</h5>
+                                <p>Razer HyperScroll 틸트 휠을 장착하였으며 커스터마이징 가능한 무선 게이밍 마우스</p>
+                                <div>
+                                    <p>232,000원</p>
+                                    <a href="#">구입</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/store_img/razer-blue-screen_500x500.png" alt="">
+                            <figcaption>
+                                <h5>Razer Blue Screen</h5>
+                                <p>Collapsible Chroma Key Backdrop for Streaming</p>
+                                <div>
+                                    <p>239,900원</p>
+                                    <a href="#">구입</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+    <section class="title_container">
+        <div>
+            <h2>오직 RAZER.COM에서만</h2>
+            <p>다른 곳에서는 볼 수 없는 독점적인 장비 및 서비스를 확인하세요</p>
+        </div>
+    </section>
+
+
+
+
+    <section class="slide_container">
+        <div>
+            <div class="h3_container">
+                <h3>RAZER 전용</h3>
+                <h4>Explore unique products only available at our official online store</h4>
+            </div>
+
+            <div class="pr_slide">
+                <div class="left_button2"></div>
+                <div class="right_button2"></div>
+                <ul class="slide_ul">
+                    <li>
+                        <figure>
+                            <img src="./img/store_img/razer-sneki-snek-wall-light_500x500.png" alt="">
+                            <figcaption>
+                                <h5>Razer Sneki Snek Wall Light</h5>
+                                <p>벽걸이형 RGB 조명 LED 네온 게이밍 라이트</p>
+                                <div>
+                                    <p>115,000원</p>
+                                    <a href="#">구입</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/store_img/razer-athleisure-instinct-tee-500x500.png" alt="">
+                            <figcaption>
+                                <h5>Razer Athleisure - Instinct Tee - L</h5>
+                                <p></p>
+                                <div>
+                                    <p>90,000원</p>
+                                    <a href="#">구입</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/store_img/razer-athleisure-instinct-shorts-gallery-500x500.png" alt="">
+                            <figcaption>
+                                <h5>Razer Athleisure - Instinct Shorts - L</h5>
+                                <p></p>
+                                <div>
+                                    <p>105,000원</p>
+                                    <a href="#">구입</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/store_img/razer-athleisure-instinct-leggings-500x500.png" alt="">
+                            <figcaption>
+                                <h5>Razer Athleisure - Instinct High Rise Leggings - L</h5>
+                                <p></p>
+                                <div>
+                                    <p>120,000원</p>
+                                    <a href="#">구입</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/store_img/razer-naga-left-handed-edition-500x500.png" alt="">
+                            <figcaption>
+                                <h5>Razer Naga Left Handed Edition</h5>
+                                <p>왼손잡이 사용자를 위한 인체공학 디자인의 MMO 게이밍 마우스</p>
+                                <div>
+                                    <p>139,000원</p>
+                                    <a href="#">구입</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/store_img/thunderbolt-4-cables-black-500x500.png" alt="">
+                            <figcaption>
+                                <h5>Razer Thunderbolt 4 Cable</h5>
+                                <p>Thunderbolt 4 케이블</p>
+                                <div>
+                                    <p>85,900원</p>
+                                    <a href="#">구입</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/store_img/team-razer-floor-rug-500x500.png" alt="">
+                            <figcaption>
+                                <h5>Team Razer Floor Rug</h5>
+                                <p>방 안을 꾸며주는 e스포츠용 게이밍 의자 액세서리</p>
+                                <div>
+                                    <p>105,000원</p>
+                                    <a href="#">구입</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/store_img/razer-universal-chair-caster-studs-500x500.png" alt="">
+                            <figcaption>
+                                <h5>Razer Universal Chair Caster Studs</h5>
+                                <p>게이밍 의자용 고정형 캐스터 스터드</p>
+                                <div>
+                                    <p>27,500원</p>
+                                    <a href="#">구입</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="slide_container">
+        <div>
+            <div class="h3_container">
+                <h3>RAZER 마지막 기회 </h3>
+                <h4>엄선된 클래식 장비 - 완전한 보증이 포함된 특별 가격</h4>
+            </div>
+
+            <div class="pr_slide">
+                <div class="left_button3"></div>
+                <div class="right_button3"></div>
+                <ul class="slide_ul">
+                    <li>
+                        <figure>
+                            <img src="./img/store_img/blackwidow-lite-mercury-5.png" alt="">
+                            <figcaption>
+                                <h5>Razer BlackWidow Lite - US - Mercury</h5>
+                                <p>조용하고 컴팩트한 키보드</p>
+                                <div>
+                                    <p>129,000원</p>
+                                    <a href="#">구입</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/store_img/razer-huntsman-tournament-edition-green-500x500.png" alt="">
+                            <figcaption>
+                                <h5>Razer Huntsman Tournament Edition - US - Green Keycaps</h5>
+                                <p>Razer™ 리니어 옵티컬 스위치가 탑재된 컴팩트 게이밍 키보드</p>
+                                <div>
+                                    <p>178,000원</p>
+                                    <a href="#">구입</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/store_img/kraken.png" alt="">
+                            <figcaption>
+                                <h5>Razer Kraken for Console</h5>
+                                <p>유선 콘솔 게이밍 헤드셋</p>
+                                <div>
+                                    <p>119,000원</p>
+                                    <a href="#">구입</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/store_img/razer-kishi-xbox-500x500.png" alt="">
+                            <figcaption>
+                                <h5>Razer Kishi for Android (Xbox)</h5>
+                                <p>Android용 유니버설 게이밍 컨트롤러(Xbox)</p>
+                                <div>
+                                    <p>134,900원</p>
+                                    <a href="#">구입</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/store_img/tactical-pro-17-backpack-v2-500x500.png" alt="">
+                            <figcaption>
+                                <h5>Razer Tactical Pro 17.3" Backpack v2</h5>
+                                <p>17.3인치 노트북 수납공간을 포함한 여행용 롤탑 백팩</p>
+                                <div>
+                                    <p>217,900원</p>
+                                    <a href="#">구입</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/store_img/mouse-pouch-v2-500x500.png" alt="">
+                            <figcaption>
+                                <h5>Razer Mouse Pouch V2</h5>
+                                <p>Secure Protection for Your Mouse</p>
+                                <div>
+                                    <p>22,000원</p>
+                                    <a href="#">구입</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/store_img/razer-atheris-300x300.png" alt="">
+                            <figcaption>
+                                <h5>Razer Atheris - Black</h5>
+                                <p>최고의 무선 노트북 인체공학적 마우스</p>
+                                <div>
+                                    <p>70,000원</p>
+                                    <a href="#">구입</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/store_img/seiren-x-black-500x500.png" alt="">
+                            <figcaption>
+                                <h5>Razer Seiren X - Black</h5>
+                                <p>콤팩트 마이크를 통해 전문적인 수준으로 스트리밍을 향상시킬 수 있습니다.</p>
+                                <div>
+                                    <p>149,000원</p>
+                                    <a href="#">구입</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="title_container last_title">
+        <div>
+            <h2 style="text-align: center;">RAZER.COM에서 구매해야하는 이유!</h2>
+            
+        </div>
+    </section>
+
+
+
+    <section class="panel_container">
+        <div class="item_box">
+            <p><img src="./img/store_img/fastbuy.svg" alt=""></p>
+            <div>
+                가장 먼저 구매하기
+            </div>
+            <p>
+                Razer.com은 가장 바라던 Razer 장비를 출시 즉시 구입할 수 있는 유일한 곳입니다.
+            </p>
+        </div>
+
+        <div class="item_box">
+            <p><img src="./img/store_img/bucket.svg" alt=""></p>
+            <div>
+                방대하고 다양한 Razer 장비
+            </div>
+            <p>
+                Razer 공식 온라인 스토어는 다른 어느 곳에서도 볼 수 없는 대규모 제품 컬렉션을 보유하고 있습니다.
+            </p>
+        </div>
+
+        <div class="item_box">
+            <p><img src="./img/store_img/exclusives.svg" alt=""></p>
+            <div>
+                독점 Razer 장비 및 제품
+            </div>
+            <p>
+                Razer.com에서만 구매할 수 있는 리미티드 에디션 Razer 장비를 만나볼 수 있습니다.
+            </p>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+<section class="for_store_footer">
+    <div class="footer_container">
+        <div class="foot1">           
+            <div id="label_1" class="label_container">
+                <label>쇼핑</label>
+                <ul>
+                    <li><a href="">RazerStores</a></li>
+                    <li><a href="">RazerCafe</a></li>
+                    <li><a href="">매장 찾기 서비스</a></li>
+                    <li><a href="">구매 프로그램</a></li>
+                    <li><a href="">Exclusives</a></li>
+                </ul>        
+            </div>
+    
+            <div id="label_2" class="label_container">
+                <label>둘러보기</label>
+                <ul>
+                    <li><a href="">기술</a></li>
+                    <li><a href="">Chroma RGB</a></li>
+                    <li><a href="">콘셉트</a></li>
+                    <li><a href="">e스포츠</a></li>
+                    <li><a href="">컬래버레이션</a></li>
+                </ul>        
+            </div>
+    
+            <div id="label_3" class="label_container">
+                <label>지원</label>
+                <ul>
+                    <li><a href="">도움 받기</a></li>
+                    <li><a href="">등록 및 보증</a></li>
+                    <li><a href="">RazerStore 지원</a></li>
+                    <li><a href="">Razer ID 관리</a></li>
+                    <li><a href="">Support Videos</a></li>
+                </ul>        
+            </div>
+    
+            <div id="label_4" class="label_container">
+                <label>회사관련</label>
+                <ul>
+                    <li><a href="">Razer 소개</a></li>
+                    <li><a href="">채용</a></li>
+                    <li><a href="">프레스 룸</a></li>
+                    <li><a href="">zVentures</a></li>
+                    <li><a href="">연락처</a></li>
+                </ul>        
+            </div>
+            
+    
+            <div class="SNS_container">
+                <p>FOR GAMERS. BY GAMERS.™</p>
+                <div class="SNS_icon">
+                    <img src="./img/SNS_icon/SM0001-facebook.svg">
+                    <img src="./img/SNS_icon/SM0003-instagram.svg">
+                    <img src="./img/SNS_icon/SM0005-twitter.svg">
+                </div>
+            </div>
+        </div>
+        <div class="end_container">
+            <div class="line"></div>
+                    
+            <div class="end">
+                    <div class="end_left">
+                        <div>Copyright © 2022 Razer Inc. All rights reserved.</div>
+                        <div><a href="#">법적 약관</a> | <a href="#">개인정보 보호정책</a> | <a href="#">쿠키 정책</a></div>
+                    </div>
+                    <div>   
+                        <div class="end_right"><a href="#">대한민국</a>  |  <a href="#">Change Location > </a></div>
+                    </div>
+            </div>
+        </div>
+
+        
+
+        <div class="SNS_container_767">
+            <p>FOR GAMERS. BY GAMERS.™</p>
+            <div class="SNS_icon">
+                <img src="./img/SNS_icon/SM0001-facebook.svg">
+                <img src="./img/SNS_icon/SM0003-instagram.svg">
+                <img src="./img/SNS_icon/SM0005-twitter.svg">
+            </div>
+        </div>
+
+
+
+    </div>   
+
+    <script>
+        const footerTrigger = document.querySelectorAll('.label_container')
+        const footList = document.querySelectorAll('.label_container ul')
+        
+        let footIdx=0;
+
+        footerTrigger.forEach(function(value,i){                                //forEach문 사용 
+            value.onclick = function(){
+                if(footIdx==i){
+                    this.classList.toggle('active');
+                    
+                }else{
+                    footerTrigger[footIdx].classList.remove('active');     
+                    this.classList.add('active');
+                }
+                footIdx=i;
+        }
+        })
+
+        // for(let i=0; i<footerTrigger.length; i++){
+        //     footerTrigger[i].onclick = function(){
+        //     footerTrigger[i].classList.toggle('active');            
+        // }
+        // }
+
+        // =================== 위에 for문으로 대체 =====================
+
+        // footerTrigger[0].onclick = function(){
+        //     footerTrigger[0].classList.toggle('active');
+        //     footList[0].classList.toggle('active');
+        //     // footIcon[0].classList.toggle('active');
+        // }
+
+        // footerTrigger[1].onclick = function(){
+        //     footerTrigger[1].classList.toggle('active');
+        //     footList[1].classList.toggle('active');
+        // }
+
+        // footerTrigger[2].onclick = function(){
+        //     footerTrigger[2].classList.toggle('active');
+        //     footList[2].classList.toggle('active');
+        // }
+
+        // footerTrigger[3].onclick = function(){
+        //     footerTrigger[3].classList.toggle('active');
+        //     footList[3].classList.toggle('active');
+        // }
+      
+    </script>
+</section>
+
+
+
+
+
+
+
+
+
+
+</main>
+</body>
+</html>

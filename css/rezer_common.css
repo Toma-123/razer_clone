@@ -101,6 +101,7 @@ header > nav > a:hover{
     margin: 0;
     padding: 0;
     display: none;
+    
 }
 
 .hidden_src > input {
@@ -119,6 +120,7 @@ header > nav > a:hover{
     position: relative;
     padding:0 3%;
     outline: none;
+    
 }
 
 .hidden_src .X_button{
@@ -137,6 +139,7 @@ header > nav > a:hover{
 
 .hidden_src.active {
     display: block;
+    
 }
 
 
@@ -148,6 +151,10 @@ header > nav > a:hover{
 /* ================= header 반응형 ================= */
 /* ================= header 반응형 ================= */
 /* ================= header 반응형 ================= */
+
+.material-symbols-outlined {    
+    font-size: 32px!important;
+}
 
 header .nav767 {
     display: none;
@@ -462,7 +469,7 @@ header .mobile_srcbar {
         font-weight: 600;
         padding-bottom: 2%;
         margin-bottom: 5%;
-        border-bottom: 1px solid #999;
+        border-bottom: 1px solid #3b3b3b;
     }
     
     .label_container a{
@@ -552,7 +559,7 @@ header .mobile_srcbar {
         display: block;
         margin: 0 5%;
         text-align: center;
-        border-bottom: 1px solid #999;
+        border-bottom: 1px solid #3b3b3b;
     }
 
     .end_left > div:nth-child(1) {

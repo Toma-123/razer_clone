@@ -1,0 +1,199 @@
+@import url(../css/rezer_common.css);
+
+header > nav > a:nth-of-type(6) {
+    color:#fff;
+}
+
+main{
+    width: 100%;
+    background-color: #000;
+}
+
+
+.mobile_navbar {
+    padding-top: 100px;
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #44D62C;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+/* .mobile_navbar > div {
+    
+} */
+
+.mobile_navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    white-space: nowrap;
+    
+}
+
+/* +++++++++++++++++++++ 애니메이션 +++++++++++++++++++++++++++ */
+
+.mobile_navbar ul{
+    animation-duration: 1s;
+    animation-name: slidein;
+    
+}
+
+@keyframes slidein{
+    0%{margin-left: 20%; opacity: 0%;}
+    100%{margin-left: 0%; opacity: 100%;}
+}
+
+/* +++++++++++++++++++++ 애니메이션 +++++++++++++++++++++++++++ */
+
+.icon_container{
+    text-align: center;
+    margin: 0 25px;
+}
+
+.icon_container > div:nth-of-type(2) {
+    color: #F5B21D;
+    font-size: 12px;
+    text-align: center;
+}
+
+.icon_label{
+    font-size: 12px;
+    font-family: 'Roboto',sans-serif;;
+    color: #ffffff;
+    margin-bottom:4px;
+    margin-top: 5px;
+}
+
+.mobile_navbar li:hover .icon_label{
+    color: #F5B21D;
+}
+
+
+
+
+.icon_container{
+    display: block;
+    
+}
+
+/* === moblie icon new on/off === */
+/* === moblie icon new on/off === */
+/* === moblie icon new on/off === */
+
+
+.icon_container > div:nth-of-type(2){
+    visibility: hidden;
+}
+
+.intro_tag{
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: #1a1a1a;    
+}
+
+.intro_tag > div {
+    background-color: #111;
+    padding: 3rem 0;
+}
+
+.intro_tag > div > div {
+    display: grid;
+    grid-template-areas:
+        "first"
+        "second"
+        "third"
+        "forth";
+    max-width: 980px;
+    text-align: center;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+    margin: 0 auto;
+}
+
+.intro_tag h1 {
+    margin: 0;
+    color: #44d62c;
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+    padding-bottom: 5px;
+    margin-bottom: 8px;
+}
+
+.intro_tag p {
+    color: #888;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+.console_item {
+    max-width: 1920px;
+    margin: 0 auto;
+    background-position: top;
+    background-position-x: center;
+    background-position-y: top;
+    background-size: cover;
+    height: 700px;
+    max-height: 700px;
+    border-bottom: 1px solid #44D62C;
+    background-color:#000;
+    text-align: center;
+    padding: 0;
+    background-repeat: no-repeat;
+}
+
+.console_item h2{
+    font-family: "RazerF5",Arial,Helvetica,sans-serif;
+    font-size: 1.75rem;
+    font-weight: 200;
+    letter-spacing: 0.0625rem;
+    line-height: 1.875rem;
+    margin: 0;
+    font-weight: 300;
+    padding: 4.0625rem 0 0;
+    color: #ffffff;
+}
+
+.console_item p {
+    max-width: 950px;
+    padding: 0.4375rem 1rem 1.25rem;
+    margin: 0 auto;
+    color: #999;
+    font-size: 1.125rem;
+    font-weight: 300;
+    
+}
+
+.console_item a {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #44D62C;
+}
+
+.lifeback1{
+    background-image: url('../img/service_img/services-razer-gold.jpg');
+}
+
+.lifeback2{
+    background-image: url('../img/service_img/services-razer-silver.jpg');
+}
+
+.lifeback3{
+    background-image: url('../img/service_img/services-gold-webshop.jpg');
+}
+
+.lifeback4{
+    background-image: url('../img/service_img/services-razer-id.jpg');
+}
+
+.for_service_footer{
+    background-color: #111;
+    padding-top: 20px;
+}

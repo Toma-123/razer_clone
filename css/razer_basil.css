@@ -436,6 +436,29 @@ i {
         max-width: 1920px;
         opacity: 80%;
     }
+    .basil_effect::before{
+        position: absolute;
+        z-index: 10000;
+        content: '';
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100px;
+        background: linear-gradient( black,transparent);
+        opacity: 100%;
+    }
+    
+    .basil_effect::after{
+        position: absolute;
+        z-index: 10000;
+        content: '';
+        bottom: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100px;
+        background: linear-gradient(transparent, black);
+        opacity: 100%;
+    }
 
     .rain-container img {
         z-index: 2;

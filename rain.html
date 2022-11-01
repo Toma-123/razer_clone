@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="rain-container">
+        <img src="./img/basil_img/razer-basilisk-v3-pro.png">
+    </div>
+
+    <style>
+        img{
+            z-index: 999;
+            position: absolute;
+            top: 10%;
+            left: 40%;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .rain-container {
+            position: relative;
+            background: #000;
+            width: 1920px;
+            height: 800px;
+            overflow: hidden;
+        }
+
+        i {
+            position: absolute;
+            height: 100px;
+            border-radius: 0 0 999px 999px;
+            animation: animate 0.5s linear infinite;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: translateY(-120px);
+            }
+
+            100% {
+                transform: translateY(calc(100vh + 120px));
+            }
+        }
+    </style>
+
+
+    <script>
+        const rainContainer = document.querySelector(".rain-container");
+
+            // background Colors for the raindrop
+            const background = [
+                "linear-gradient(transparent, skyblue)",
+                "linear-gradient(transparent, red)",
+                "linear-gradient(transparent, limegreen)",
+                "linear-gradient(transparent, white)",
+                "linear-gradient(transparent, yellow)",
+                "linear-gradient(transparent, blue)",
+                "linear-gradient(transparent, purple)",
+                "linear-gradient(transparent, pink)"
+            ];
+
+            const amount = 300; // amount of raindops
+            let i = 0;
+
+            // Looping and creating the raindrop then adding to the rainContainer
+            while (i < amount) {
+                //  Creating and Element
+                const drop = document.createElement("i");
+
+                //   CSS Properties for raindrop
+                const raindropProperties = {
+                    width: Math.random() * 3 + "px",
+                    positionX: Math.floor(Math.random() * window.innerWidth) + "px",
+                    delay: Math.random() *  -5 + "s",
+                    duration: (Math.random()) + 2 + "s",
+                    bg: background[Math.round(Math.random() * background.length)],
+                    opacity: Math.random() + 10
+                };
+
+                //   Setting Styles for raindrop
+                drop.style.width = raindropProperties.width;
+                drop.style.left = raindropProperties.positionX;
+                drop.style.animationDelay = raindropProperties.delay;
+                drop.style.animationDuration = raindropProperties.duration;
+                drop.style.background = raindropProperties.bg;
+                drop.style.opacity = raindropProperties.opacity;
+
+                //   Appending the raindrop in the raindrop container
+                rainContainer.appendChild(drop);
+                i++;
+            }
+    </script>
+
+    
+</body>
+
+</html>

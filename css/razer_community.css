@@ -1,0 +1,110 @@
+@import url(../css/rezer_common.css);
+
+header > nav > a:nth-of-type(7) {
+    color:#fff;
+}
+
+
+main{
+    width: 100%;
+    background-color: #111111;
+}
+
+
+.mobile_navbar {
+    padding-top: 100px;
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #44D62C;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+/* .mobile_navbar > div {
+    
+} */
+
+.mobile_navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    white-space: nowrap;
+    
+}
+
+/* +++++++++++++++++++++ 애니메이션 +++++++++++++++++++++++++++ */
+
+.mobile_navbar ul{
+    animation-duration: 1s;
+    animation-name: slidein;
+    
+}
+
+@keyframes slidein{
+    0%{margin-left: 20%; opacity: 0%;}
+    100%{margin-left: 0%; opacity: 100%;}
+}
+
+/* +++++++++++++++++++++ 애니메이션 +++++++++++++++++++++++++++ */
+
+.icon_container{
+    text-align: center;
+    margin: 0 25px;
+}
+
+.icon_container > div:nth-of-type(2) {
+    color: #F5B21D;
+    font-size: 12px;
+    text-align: center;
+}
+
+.icon_label{
+    font-size: 12px;
+    font-family: 'Roboto',sans-serif;;
+    color: #ffffff;
+    margin-bottom:4px;
+    margin-top: 5px;
+}
+
+.mobile_navbar li:hover .icon_label{
+    color: #F5B21D;
+}
+
+
+
+
+.icon_container{
+    display: block;
+    
+}
+
+/* === moblie icon new on/off === */
+/* === moblie icon new on/off === */
+/* === moblie icon new on/off === */
+
+
+#watch> div:nth-of-type(2){
+    visibility: hidden;
+}
+#apparel> div:nth-of-type(2){
+    visibility: visible;
+}
+#bags> div:nth-of-type(2){
+    visibility: hidden;
+}
+#gear> div:nth-of-type(2){
+    visibility: hidden;
+}
+#sneki> div:nth-of-type(2){
+    visibility: visible;
+}
+#respawn> div:nth-of-type(2){
+    visibility: hidden;
+}
+#collabs> div:nth-of-type(2){
+    visibility: visible;
+}
+#mac> div:nth-of-type(2){
+    visibility: hidden;
+}
+

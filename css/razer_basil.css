@@ -341,7 +341,7 @@ main {
     z-index: 1;
     margin: 0 auto;
     max-width: 1920px;
-    opacity: 80%;
+    opacity: 100%;
 }
 
 .rain-container img {
@@ -365,6 +365,7 @@ i {
     }
 
     100% {
+        opacity: 1;
         transform: translateY(calc(100vh + 120px));
     }
 }

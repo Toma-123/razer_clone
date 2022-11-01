@@ -152,9 +152,7 @@ header > nav > a:hover{
 /* ================= header 반응형 ================= */
 /* ================= header 반응형 ================= */
 
-.material-symbols-outlined {    
-    font-size: 32px!important;
-}
+
 
 header .nav767 {
     display: none;
@@ -166,6 +164,11 @@ header .mobile_srcbar {
 
 
 @media (max-width:767px){
+    .material-symbols-outlined {    
+        font-size: 32px!important;
+    }
+
+
     header .mobile_srcbar {
         display: block;
         width: 100%;

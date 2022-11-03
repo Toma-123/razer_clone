@@ -70,7 +70,87 @@ main{
     color: #F5B21D;
 }
 
+/* ===============================================================================================
+=================================  .mobile_navbar 반응형    ======================================
+================================================================================================= */
 
+
+    @media (max-width:767px){
+        .mobile_navbar {
+            padding-top: 100px;
+            background-color: #1a1a1a;
+            border-bottom: 1px solid #44D62C;
+            max-width: 1920px;
+            margin: 0 auto;
+            padding-bottom: 20px;
+            overflow-X: scroll;
+        }
+        
+        /* .mobile_navbar > div {
+            
+        } */
+        
+        .mobile_navbar ul {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            white-space: nowrap;
+            
+            
+            
+        }
+        
+        /* +++++++++++++++++++++ 애니메이션 +++++++++++++++++++++++++++ */
+        
+        .mobile_navbar ul{
+            animation-duration: 1s;
+            animation-name: slidein;
+            
+    
+        }
+        
+        @keyframes slidein{
+            0%{margin-left: 20%; opacity: 0%;}
+            100%{margin-left: 0%; opacity: 100%;}
+        }
+        
+        /* +++++++++++++++++++++ 애니메이션 +++++++++++++++++++++++++++ */
+    
+        .icon_container{
+            text-align: center;
+            margin: 0 25px;
+        }
+        
+        .icon_container > div:nth-of-type(2) {
+            color: #F5B21D;
+            font-size: 12px;
+            text-align: center;
+        }
+        
+        .icon_label{
+            font-size: 12px;
+            font-family: 'Roboto', sans-serif;
+            color: #ffffff;
+            margin-bottom:4px;
+            margin-top: 5px;
+        }
+        
+        .mobile_navbar li:hover .icon_label{
+            color: #F5B21D;
+        }
+        
+        
+        
+        
+        .icon_container{
+            display: block;
+            
+        }
+    }
+
+/* ===============================================================================================
+=================================  .mobile_navbar 반응형 END ======================================
+================================================================================================= */
 
 
 .icon_container{
@@ -86,6 +166,11 @@ main{
 .icon_container > div:nth-of-type(2){
     visibility: hidden;
 }
+
+
+
+
+
 
 .console_item {
     max-width: 1920px;
@@ -151,7 +236,84 @@ main{
 }
 
 
+/* ===============================================================================================
+================================= .console_item 반응형 START ======================================
+================================================================================================= */
 
+
+@media (max-width:767px){
+
+.console_item {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    background-position: top;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: cover;
+    height: 600px;
+    max-height: 700px;
+    border-bottom: 1px solid #44D62C;
+    background-color:#000;
+    text-align: center;
+    padding: 0;
+    background-repeat: no-repeat;
+}
+
+.console_item h2{
+    font-family: "RazerF5",Arial,Helvetica,sans-serif;
+    font-size: 2rem;
+    font-weight: 200;
+    letter-spacing: 0rem;
+    line-height: 3rem!important;
+    margin: 0;
+    
+    
+    color: #ffffff;
+}
+
+.console_item p {
+    max-width: 950px;
+    padding: 0;
+    margin: 0 auto;
+    color: #999;
+    font-size: 1.125rem;
+    font-weight: 300;
+    
+}
+
+.console_item a {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #44D62C;
+}
+
+.community_back1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/community_img/razer-community-hero.jpg);
+}
+
+.community_back1 h2{
+    color: #44D62C;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 0;
+}
+
+.community_back1 p{
+    color: #fff;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+
+}
+
+/* ===============================================================================================
+================================= .console_item 반응형 END ======================================
+================================================================================================= */
 
 
 .intro_tag{
@@ -207,6 +369,92 @@ main{
 .community_back5{
     background-image: url(../img/community_img/razer-esports.jpg);
 }
+
+
+
+
+
+/* ===============================================================================================
+================================= .intro_tag 반응형 START ======================================
+================================================================================================= */
+
+
+
+
+
+
+@media (max-width:767px){
+    .intro_tag{
+        width: 100%;
+        max-width: 1920px;
+        margin: 0 auto;
+        background-color: #44d62c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px!important;
+    }
+    
+    .intro_tag > div {
+        
+        padding: 3rem 0;
+    }
+    
+    .intro_tag > div > div {
+        display: grid;
+        grid-template-areas:
+            "first"
+            "second"
+            "third"
+            "forth";
+        max-width: 980px;
+        text-align: center;
+        padding-left: 1.875rem;
+        padding-right: 1.875rem;
+        margin: 0 auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    
+    .intro_tag p {
+        color: #000;
+        max-width: 100%;
+        margin: 0 auto;
+        font-size: 18px;
+    }
+    
+    .community_back2{
+        width: 100%;
+        background-image: url('../img/community_img/com_mobile_img/razer-brand-campaign-2022-category-450x480-mobile.jpg');
+        background-size: contain;
+    }
+    
+    .community_back3{
+        background-image: url(../img/community_img/com_mobile_img/razer-community-450x480-mobile.jpg);
+        background-size: contain;
+    }
+    
+    .community_back4{
+        background-image: url(../img/community_img/com_mobile_img/razer-community-stream-450x480-mobile.jpg);
+        background-size: contain;
+    }
+    
+    .community_back5{
+        background-image: url(../img/community_img/com_mobile_img/razer-esports-450x480-mobile.jpg);
+        background-size: contain;
+    }
+
+
+}
+
+
+/* ===============================================================================================
+================================= .intro_tag 반응형 END ======================================
+================================================================================================= */
+
+
+
 
 
 .four_item_container{
@@ -272,6 +520,77 @@ main{
     background-image: url(../img/community_img/razer-developer.jpg);
 }
 
+/* ===============================================================================================
+================================= .four_item_container 반응형 START ======================================
+================================================================================================= */
+
+@media (max-width:767px){
+
+    .four_item_container{
+        width: 100%;
+        max-width: 1920px;
+        margin: 0 auto;
+        background-color: #222;
+    }
+    
+    .four_item_panel{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    .four_item{
+        display: block;
+        
+    }
+    
+    .commu_item{
+        height: 580px;
+        border-bottom: 1px solid #44D62C;
+        
+        background-position: center bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+    
+    }
+    
+    .commu_item > div {
+        color: #fff;
+        font-family: "RazerF5",Arial,Helvetica,sans-serif;
+        font-size: 1.75rem;
+        font-weight: 300;
+        line-height: 3rem;
+        padding: 4.065rem 0 0;
+        margin: 0 10px 1.25rem;
+        text-align: center;
+    }
+    
+    .commu_item > a {
+        color:#44D62C;
+    }
+    
+    
+    .item1{
+        background-image: url(../img/community_img/com_mobile_img/razer-insider-450x480-mobile.jpg)
+    }
+    
+    .item2{
+        background-image: url(../img/community_img/com_mobile_img/razer-sustainability-450x480-mobile.jpg)
+    }
+    
+    .item3{
+        background-image: url(../img/community_img/com_mobile_img/razer-wallpapers-450x480-mobile.jpg)
+    }
+    
+    .item4{
+        background-image: url(../img/community_img/com_mobile_img/razer-developer-450x480-mobile.jpg)
+    }
+}
+
+/* ===============================================================================================
+================================= .four_item_container 반응형 END ======================================
+================================================================================================= */
 
 
 
@@ -378,4 +697,135 @@ main{
     background-color: #111111;
     margin-top: 0;
     padding-top: 1%;
+}
+
+/* ===============================================================================================
+================================= .last_panel_container 반응형 START ==============================
+================================================================================================= */
+
+@media(max-width:767px){
+    .last_panel_container{
+        max-width: 1920px;
+        width: 100%;
+        margin: 0 auto;
+        min-height: 400px;
+        
+        
+        background-position-x: center;
+        background-position-y: top;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+    }
+    
+    .last_panel{
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: block;
+        
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .last_panel h2{
+        padding: 2rem;
+        font-size: 2rem;
+        margin: 0 auto;
+        margin-top: 50px;
+        color: #fff;
+        font-weight: 300;
+    }
+    
+    .last_panel p {
+        padding: 2rem;
+        color: #999;
+        font-size: 1.2rem;
+    }
+
+    .panel1{
+        background-image: url('../img/community_img/com_mobile_img/razer-community-giveaways-768x500-mobile.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-bottom: 50px;
+        background-color: #000;
+        
+    }
+
+    .panel1 h2{
+        margin-top: 250px;
+    }
+    
+    .panel2{
+        background-image: url('../img/community_img/com_mobile_img/razer-community-min-768x500-mobile.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-bottom: 50px;
+        background-color: #000;
+        
+    }
+
+    .panel2 h2{
+        margin-top: 250px;
+    }
+    
+    .last_panel_icons{
+        
+        width: 100%;
+        max-width: 1200px;
+        display: block;
+        margin: 0 auto;
+        margin-left: 2rem;
+
+        
+    }
+    
+    .last_panel_icons img{
+        width: 60px;
+        margin: 2rem 20px 0;
+        min-width: 30px;
+    }
+    
+    .panel3{
+        background-color: #0f0f0f;
+        
+    }
+    
+    
+    
+    .last_card{
+        width: 100%;
+        max-width: 900px;
+        display: block;
+        justify-content: space-between;
+        align-items: flex-end;
+        text-align: center;
+    }
+    
+    .last_card p{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .last_card p img {
+        width: 200px;
+    }
+    
+    .last_card p:nth-of-type(2) img {
+        width: 300px;
+    }
+    
+    .last_card a{
+        color:#44D62C;
+    }
+    
+    .for_community_footer{
+        background-color: #111111;
+        margin-top: 0;
+        padding-top: 1%;
+    }
 }

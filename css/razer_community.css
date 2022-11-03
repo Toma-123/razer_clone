@@ -83,28 +83,299 @@ main{
 /* === moblie icon new on/off === */
 
 
-#watch> div:nth-of-type(2){
-    visibility: hidden;
-}
-#apparel> div:nth-of-type(2){
-    visibility: visible;
-}
-#bags> div:nth-of-type(2){
-    visibility: hidden;
-}
-#gear> div:nth-of-type(2){
-    visibility: hidden;
-}
-#sneki> div:nth-of-type(2){
-    visibility: visible;
-}
-#respawn> div:nth-of-type(2){
-    visibility: hidden;
-}
-#collabs> div:nth-of-type(2){
-    visibility: visible;
-}
-#mac> div:nth-of-type(2){
+.icon_container > div:nth-of-type(2){
     visibility: hidden;
 }
 
+.console_item {
+    max-width: 1920px;
+    margin: 0 auto;
+    background-position: top;
+    background-position-x: center;
+    background-position-y: top;
+    background-size: cover;
+    height: 700px;
+    max-height: 700px;
+    border-bottom: 1px solid #44D62C;
+    background-color:#000;
+    text-align: center;
+    padding: 0;
+    background-repeat: no-repeat;
+}
+
+.console_item h2{
+    font-family: "RazerF5",Arial,Helvetica,sans-serif;
+    font-size: 1.75rem;
+    font-weight: 200;
+    letter-spacing: 0.0625rem;
+    line-height: 1.875rem;
+    margin: 0;
+    font-weight: 300;
+    padding: 4.0625rem 0 0;
+    color: #ffffff;
+}
+
+.console_item p {
+    max-width: 950px;
+    padding: 0.4375rem 1rem 1.25rem;
+    margin: 0 auto;
+    color: #999;
+    font-size: 1.125rem;
+    font-weight: 300;
+    
+}
+
+.console_item a {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #44D62C;
+}
+
+.community_back1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/community_img/razer-community-hero.jpg);
+}
+
+.community_back1 h2{
+    color: #44D62C;
+    font-size: 92px;
+    font-weight: bold;
+}
+
+.community_back1 p{
+    color: #fff;
+    font-weight: 300;
+    font-size: 42px;
+}
+
+
+
+
+
+.intro_tag{
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: #44d62c;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro_tag > div {
+    
+    padding: 3rem 0;
+}
+
+.intro_tag > div > div {
+    display: grid;
+    grid-template-areas:
+        "first"
+        "second"
+        "third"
+        "forth";
+    max-width: 980px;
+    text-align: center;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+    margin: 0 auto;
+}
+
+
+.intro_tag p {
+    color: #000;
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.community_back2{
+    background-image: url('../img/community_img/razer-brand-campaign-2022-category-1920x700-desktop.jpg');
+}
+
+.community_back3{
+    background-image: url(../img/community_img/razer-community.jpg);
+}
+
+.community_back4{
+    background-image: url(../img/community_img/razer-community-stream.jpg);
+}
+
+.community_back5{
+    background-image: url(../img/community_img/razer-esports.jpg);
+}
+
+
+.four_item_container{
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: #222;
+}
+
+.four_item_panel{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+.four_item{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    
+}
+
+.commu_item{
+    height: 580px;
+    border-bottom: 1px solid #44D62C;
+    
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+
+}
+
+.commu_item > div {
+    color: #fff;
+    font-family: "RazerF5",Arial,Helvetica,sans-serif;
+    font-size: 1.75rem;
+    font-weight: 300;
+    line-height: 1.75rem;
+    padding: 4.065rem 0 0;
+    margin: 0 10px 1.25rem;
+    text-align: center;
+}
+
+.commu_item > a {
+    color:#44D62C;
+}
+
+
+.item1{
+    background-image: url(../img/community_img/razer-insider.jpg);
+}
+
+.item2{
+    background-image: url(../img/community_img/razer-sustainability.jpg);
+}
+
+.item3{
+    background-image: url(../img/community_img/razer-wallpapers.jpg);
+}
+
+.item4{
+    background-image: url(../img/community_img/razer-developer.jpg);
+}
+
+
+
+
+
+.last_panel_container{
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 400px;
+    
+    
+    background-position-x: center;
+    background-position-y: top;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.panel1{
+    background-image: url('../img/community_img/razer-community-giveaways.jpg');
+}
+
+.panel2{
+    background-image: url('../img/community_img/razer-community-min.jpg');
+    
+    
+}
+
+.last_panel{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.last_panel h2{
+    font-size: 2rem;
+    margin: 0 auto;
+    color: #fff;
+    font-weight: 300;
+}
+
+.last_panel p {
+    padding: 1rem 0;
+    color: #999;
+    font-size: 1.2rem;
+}
+
+.last_panel_icons{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.last_panel_icons img{
+    width: 60px;
+    margin: 2rem 20px 0;
+    min-width: 30px;
+}
+
+.panel3{
+    background-color: #0f0f0f;
+    
+}
+
+
+
+.last_card{
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.last_card p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.last_card p img {
+    width: 200px;
+}
+
+.last_card p:nth-of-type(2) img {
+    width: 300px;
+}
+
+.last_card a{
+    color:#44D62C;
+}
+
+.for_community_footer{
+    background-color: #111111;
+    margin-top: 0;
+    padding-top: 1%;
+}

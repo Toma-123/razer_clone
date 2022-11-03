@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razer_Clone_Support</title>
+    <link href="./css/razer_sup.css" rel="stylesheet">
+    <script defer src="./js/razer_sup.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" type="image/png" href="./favicomatic/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./favicomatic/favicon-16x16.png" sizes="16x16" />
+</head>
+<body>
+    <div class="header_container">
+        <header>            
+            <nav>                
+                <!-- 모바일 검색바 -->
+                <input class="mobile_srcbar" type="text" name="search" placeholder="Razer.com 검색">
+                
+                <!-- 데스크탑 검색바 -->
+                <div class="hidden_src">
+                    
+                    <input type="text" name="hidden_search" placeholder="Razer.com 검색">
+                    <button class="X_button">
+                        <img src="./img/mobilemenu_img/X_icon3.png">
+                    </button>
+                </div>
+
+                <a href="./index.html"><img src="./img/logo/razer-ths-logo.svg" alt="로고"></a>
+                <a href="./razer_pc.html">PC</a>
+                <a href="./razer_console.html">콘솔</a>
+                <a href="./razer_mobile.html">모바일</a>
+                <a href="./razer_lifestyle.html">라이프스타일</a>
+                <a href="./razer_service.html">서비스</a>
+                <a href="./razer_community.html">커뮤니티</a>
+                <a href="#">고객지원</a>
+                <a href="./razer_store.html">스토어</a>
+                <a href="#" class="search_Icon">
+                    <span class="material-symbols-outlined">
+                    search
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                    shopping_cart
+                    </span>
+                </a>
+            </nav>
+            
+            <div class="nav767">
+
+                <button class="trigger-menu">
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <a href="./index.html"><img src="./img/logo/razer-ths-logo.svg" alt="로고"></a>
+
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                    shopping_cart
+                    </span>
+                </a>
+                
+            </div>
+        </header>
+    </div>
+
+    <script>
+        const search_Trg = document.querySelector('.search_Icon')
+        const search_Bar = document.querySelector('.hidden_src')
+        const xIcon = document.querySelector('.X_button')
+        
+        search_Trg.addEventListener('click',function(){
+            search_Bar.classList.add('active')
+        })
+
+        xIcon.addEventListener('click', function(){
+            search_Bar.classList.remove('active')
+        })
+
+        
+    </script>    
+
+<!-- header 767px script -->
+
+<script>
+    // nav, trigger-menu = 클래스 active를 토글형태로 만들어줌
+
+    const header = document.querySelector('header');
+    const triggerMenu = document.querySelector('.trigger-menu');
+
+    triggerMenu.onclick = function(){
+        header.classList.toggle('active');
+        triggerMenu.classList.toggle('active');
+    };
+
+</script>
+<!-- header 767px script -->
+
+<section class="console_item supback1">
+    <div class="item_div">
+        <h2>
+            Razer 지원에 오신 것을 환영합니다
+        </h2>
+        <p>
+            저희가 도와 드리겠습니다
+        </p>
+
+        <div class="searchbar_container">
+            <img src="./img/sup_img/search-icon.png">
+            <input type="search" placeholder="Search Support(e.g. Blade Pro)">
+        </div>
+
+    </div>
+</section>
+
+
+<section class="sup_list_container">
+    <div class="list_panel">
+        <ul>
+            <li>
+                <div class="list_img_container">
+                    <div><img src="./img/sup_img/laptops.svg"></div>
+                    <p>
+                        PC
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <div class="list_img_container">
+                    <div><img src="./img/sup_img/console.svg"></div>
+                    <p>
+                        Console
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <div class="list_img_container">
+                    <div><img src="./img/sup_img/mobile.svg"></div>
+                    <p>
+                        Mobile
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <div class="list_img_container">
+                    <div><img src="./img/sup_img/chairs.svg"></div>
+                    <p>
+                        Lifestyle
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <div class="list_img_container">
+                    <div><img src="./img/sup_img/icon-razerid.svg"></div>
+                    <p>
+                        Services
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+
+<section class="sup_topic_container">
+    <div class="sup_normal_container topic_container">
+        <div class="topic_item topic1">
+            <h2>    
+                Popular Support Videos
+            </h2>
+            <div>
+                <ul>
+                    <li>
+                        View the latest support videos
+                    </li>
+                    <li>
+                        Set up the Razer Katana
+                    </li>
+                    <li>
+                        Resolve Razer Synapse when it does not start
+                    </li>
+                    <li>
+                        Troubleshoot and resolve headset mic issues
+                    </li>
+                    <li>
+                        Detect Razer devices in Synapse 3
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="topic_item topic2">
+            <h2>    
+                Popular Support Topics
+            </h2>
+            <div>
+                <ul>
+                    <li>
+                        Razer online services (self-service tools)
+                    </li>
+                    <li>
+                        Razer Synapse 3 FAQs
+                    </li>
+                    <li>
+                        Help with 7.1 Surround Sound activation
+                    </li>
+                    <li>
+                        Firmware updates for Razer Peripherals
+                    </li>
+                    <li>
+                        Device is not detected by Razer Synapse
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="sup_link_container">
+    <div class="sup_normal_container link_flex">
+        <div class="sup_link_item">
+            <h2>
+                Registration & Warranty
+            </h2>
+            <ul>
+                <li>
+                    Warranty FAQ 
+                </li>
+                
+                <li>
+                    Product Registration 
+                </li>
+
+                <li>
+                    RMA Status
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="sup_link_item">
+            <h2>
+                Online Store
+            </h2>
+            <ul>
+                <li>
+                    Shipping Guide
+                </li>
+                
+                <li>
+                    Returns & Refunds
+                </li>
+
+                <li>
+                    Razer Advantage
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="sup_link_item">
+            <h2>
+                Online Services & Resources
+            </h2>
+            <ul>
+                <li>
+                    View/Update Support Case
+                </li>
+                    
+                <li>
+                    Get System Recovery Image
+                </li>
+
+                <li>
+                    7.1 Surround Sound Activation Code
+                </li>
+
+                <li>
+                    Virtual Ring Light Activation Code
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="callout_container">
+    <div class="sup_normal_container callout_flex">
+        <div class="callout_item callout1">
+            <p><img src="./img/sup_img/insider.svg" alt="callout"></p>
+            <h3>
+                RAZER INSIDER
+            </h3>
+            <p>
+                Have a question? Ask the Razer Community for help!
+            </p>
+            <button>
+                ENTER INSIDER
+            </button>
+        </div>
+        
+        
+        <div class="callout_item callout2">
+            <p><img src="./img/sup_img/question-mark.svg" alt="callout"></p>
+            <h3>
+                NEED HELP?
+            </h3>
+            <p style="visibility: hidden;">
+                123
+            </p>
+            <button>
+                지원팀 문의
+            </button>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="sup_slide_container">
+    <div class="sup_normal_container slide_panel">
+        
+        <div class="left_button">
+            <img src="./img/sup_img/toleft.png">
+        </div>
+        <div class="right_button">
+            <img src="./img/sup_img/toright.png">
+        </div>
+
+
+        <h2>
+            What Our Customers Are Saying
+        </h2>
+        
+        <div class="border_bottom">
+
+        </div>
+
+        <div class="sup_slide">
+            <ul>
+                <li>
+                    <div class="rating_stars">
+                        <img src="./img/sup_img/star.svg">
+                        <img src="./img/sup_img/star.svg">
+                        <img src="./img/sup_img/star.svg">
+                        <img src="./img/sup_img/star.svg">
+                        <img src="./img/sup_img/star.svg">
+                    </div>
+
+                    <p>
+                        As long as the rest of the experience is as good as that that I had with Elaiza, then I will be well looked after! Elaiza was great and was able to help with my queries and vagaries with trying to do things on a phone at the same time as having a chat. She is an asset to you and easily scores 10/10.                            
+                    </p>
+
+                    <p>
+                        simon W. 1 (9)
+                    </p>
+                </li>
+
+                <li>
+                    <div class="rating_stars">
+                        <img src="./img/sup_img/star.svg">
+                        <img src="./img/sup_img/star.svg">
+                        <img src="./img/sup_img/star.svg">
+                        <img src="./img/sup_img/star.svg">
+                        <img src="./img/sup_img/star.svg">
+                    </div>
+
+                    <p>
+                        
+                        Joshua was very friendly and worked very fast to resolve my issues. Amazing efficient and quality service!                             
+                    </p>
+
+                    <p>
+                        Mark S. 2
+                    </p>
+                </li>
+
+                <li>
+                    <div class="rating_stars">
+                        <img src="./img/sup_img/star.svg">
+                        <img src="./img/sup_img/star.svg">
+                        <img src="./img/sup_img/star.svg">
+                        <img src="./img/sup_img/star.svg">
+                        <img src="./img/sup_img/star.svg">
+                    </div>
+
+                    <p>
+                        
+                        Jamel was amazing! We did not go down pointless rabbit holes in troubleshooting that I'd already been down. I am a RAZER customer for life and this customer service and people like Jamel is why. Please keep this up! Love it! I have a Razer Blade 15, DeathAdder v2 Pro, and a Blackshark Pro. My plan is to keep buying RAZER!                             
+                    </p>
+
+                    <p>
+                        andrew D. 3
+                    </p>
+                </li>
+
+                <li>
+                    <div class="rating_stars">
+                        <img src="./img/sup_img/star.svg">
+                        <img src="./img/sup_img/star.svg">
+                        <img src="./img/sup_img/star.svg">
+                        <img src="./img/sup_img/star.svg">
+                        <img src="./img/sup_img/star.svg">
+                    </div>
+
+                    <p>
+                        
+                        Amazing support. Believed me when I said I did the basic troubleshooting and went right to the helpful stuff. He provided me a firmware update quickly that solved my issue with my wireless dongle on my kraken v3 pro. Thanks Razer!                            
+                    </p>
+
+                    <p>
+                        John C. 4
+                    </p>
+                </li>
+
+                <li>
+                    <div class="rating_stars">
+                        <img src="./img/sup_img/star.svg">
+                        <img src="./img/sup_img/star.svg">
+                        <img src="./img/sup_img/star.svg">
+                        <img src="./img/sup_img/star.svg">
+                        <img src="./img/sup_img/star.svg">
+                    </div>
+
+                    <p>
+                        Their  support is amazing. They help you in every shape and form. Razer is amazing! They try to help you in every way and they're super understanding.                            
+                    </p>
+
+                    <p>
+                        Yazan S. 5
+                    </p>
+                </li>
+
+                <li>
+                    <div class="rating_stars">
+                        <img src="./img/sup_img/star.svg">
+                        <img src="./img/sup_img/star.svg">
+                        <img src="./img/sup_img/star.svg">
+                        <img src="./img/sup_img/star.svg">
+                        <img src="./img/sup_img/star.svg">
+                    </div>
+
+                    <p>
+                        Gerald was fantastic. He went above and beyond for me. He made sure there was no stone left unturned. Fantastic experience and super friendly guy . Razer is lucky to have such a good customer service agent.                             
+                    </p>
+
+                    <p>
+                        Nick B. 6
+                    </p>
+                </li>
+
+                <li>
+                    <div class="rating_stars">
+                        <img src="./img/sup_img/star.svg">
+                        <img src="./img/sup_img/star.svg">
+                        <img src="./img/sup_img/star.svg">
+                        <img src="./img/sup_img/star.svg">
+                        <img src="./img/sup_img/star.svg">
+                    </div>
+
+                    <p>
+                        Honestly, more support agents like Steven. They were really helpful and friendly. They didn't hurry me along or anything. It really helped me out. Steven if you're reading this thank you so much.                            
+                    </p>
+
+                    <p>
+                        Dylan C. 7
+                    </p>
+                </li>
+
+                <li>
+                    <div class="rating_stars">
+                        <img src="./img/sup_img/star.svg">
+                        <img src="./img/sup_img/star.svg">
+                        <img src="./img/sup_img/star.svg">
+                        <img src="./img/sup_img/star.svg">
+                        <img src="./img/sup_img/star.svg">
+                    </div>
+
+                    <p>
+                        
+                        Florence A. was awesome. She was patient with me while I gathered necessary documents and information pertinent to my case. Hope to work with her again if I have an issue.                            
+                    </p>
+
+                    <p>
+                        Hagar D. 8 (0)
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="for_sup_footer">
+    <div class="footer_container">
+        <div class="foot1">
+            <div id="label_1" class="label_container">
+                <label>쇼핑</label>
+                <ul>
+                    <li><a href="">RazerStores</a></li>
+                    <li><a href="">RazerCafe</a></li>
+                    <li><a href="">매장 찾기 서비스</a></li>
+                    <li><a href="">구매 프로그램</a></li>
+                    <li><a href="">Exclusives</a></li>
+                </ul>
+            </div>
+
+            <div id="label_2" class="label_container">
+                <label>둘러보기</label>
+                <ul>
+                    <li><a href="">기술</a></li>
+                    <li><a href="">Chroma RGB</a></li>
+                    <li><a href="">콘셉트</a></li>
+                    <li><a href="">e스포츠</a></li>
+                    <li><a href="">컬래버레이션</a></li>
+                </ul>
+            </div>
+
+            <div id="label_3" class="label_container">
+                <label>지원</label>
+                <ul>
+                    <li><a href="">도움 받기</a></li>
+                    <li><a href="">등록 및 보증</a></li>
+                    <li><a href="">RazerStore 지원</a></li>
+                    <li><a href="">Razer ID 관리</a></li>
+                    <li><a href="">Support Videos</a></li>
+                </ul>
+            </div>
+
+            <div id="label_4" class="label_container">
+                <label>회사관련</label>
+                <ul>
+                    <li><a href="">Razer 소개</a></li>
+                    <li><a href="">채용</a></li>
+                    <li><a href="">프레스 룸</a></li>
+                    <li><a href="">zVentures</a></li>
+                    <li><a href="">연락처</a></li>
+                </ul>
+            </div>
+
+
+            <div class="SNS_container">
+                <p>FOR GAMERS. BY GAMERS.™</p>
+                <div class="SNS_icon">
+                    <img src="./img/SNS_icon/SM0001-facebook.svg">
+                    <img src="./img/SNS_icon/SM0003-instagram.svg">
+                    <img src="./img/SNS_icon/SM0005-twitter.svg">
+                </div>
+            </div>
+        </div>
+        <div class="end_container">
+            <div class="line"></div>
+
+            <div class="end">
+                <div class="end_left">
+                    <div>Copyright © 2022 Razer Inc. All rights reserved.</div>
+                    <div><a href="#">법적 약관</a> | <a href="#">개인정보 보호정책</a> | <a href="#">쿠키 정책</a></div>
+                </div>
+                <div>
+                    <div class="end_right"><a href="#">대한민국</a> | <a href="#">Change Location > </a></div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="SNS_container_767">
+            <p>FOR GAMERS. BY GAMERS.™</p>
+            <div class="SNS_icon">
+                <img src="./img/SNS_icon/SM0001-facebook.svg">
+                <img src="./img/SNS_icon/SM0003-instagram.svg">
+                <img src="./img/SNS_icon/SM0005-twitter.svg">
+            </div>
+        </div>
+
+
+
+    </div>
+</section>
+</main>
+
+<script>
+const footerTrigger = document.querySelectorAll('.label_container')
+const footList = document.querySelectorAll('.label_container ul')
+
+let footIdx=0;
+
+footerTrigger.forEach(function(value,i){                                //forEach문 사용 
+    value.onclick = function(){
+        if(footIdx==i){
+            this.classList.toggle('active');
+            
+        }else{
+            footerTrigger[footIdx].classList.remove('active');     
+            this.classList.add('active');
+        }
+        footIdx=i;
+}
+})
+
+// for(let i=0; i<footerTrigger.length; i++){
+//     footerTrigger[i].onclick = function(){
+//     footerTrigger[i].classList.toggle('active');            
+// }
+// }
+
+// =================== 위에 for문으로 대체 =====================
+
+// footerTrigger[0].onclick = function(){
+//     footerTrigger[0].classList.toggle('active');
+//     footList[0].classList.toggle('active');
+//     // footIcon[0].classList.toggle('active');
+// }
+
+// footerTrigger[1].onclick = function(){
+//     footerTrigger[1].classList.toggle('active');
+//     footList[1].classList.toggle('active');
+// }
+
+// footerTrigger[2].onclick = function(){
+//     footerTrigger[2].classList.toggle('active');
+//     footList[2].classList.toggle('active');
+// }
+
+// footerTrigger[3].onclick = function(){
+//     footerTrigger[3].classList.toggle('active');
+//     footList[3].classList.toggle('active');
+// }
+
+</script>
+
+
+</body>
+</html>

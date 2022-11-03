@@ -213,8 +213,18 @@ header .mobile_srcbar {
         padding: 10% 4%;
         padding-top: 5%;
         height: 100%;
-        transition: transform 0.5s;
+        transition: 0.5s;
         
+    }
+
+    header.active nav{
+        transform: translateX(0%);        
+        opacity: 100%;
+        /* transition: 0.5s; */
+    }
+    
+    header.active {
+        position: fixed;
     }
     
     header > nav > a {
@@ -305,17 +315,7 @@ header .mobile_srcbar {
 
     
 
-    header.active nav{
-        transform: translateX(0%);
-        
-        opacity: 100%;
-        
-        
-    }
     
-    header.active {
-        position: fixed;
-    }
 
     
     

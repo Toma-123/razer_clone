@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./css/razer_basil_pur.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" type="image/png" href="./favicomatic/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./favicomatic/favicon-16x16.png" sizes="16x16" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script defer src="./js/razer_basil_pur.js"></script>
+</head>
+<body>
+    
+<main>
+    <div class="header_container">
+        <header>
+            
+            <nav>
+                
+                <!-- 모바일 검색바 -->
+                <input class="mobile_srcbar" type="text" name="search" placeholder="Razer.com 검색">
+                
+                <!-- 데스크탑 검색바 -->
+                <div class="hidden_src">
+                    
+                    <input type="text" name="hidden_search" placeholder="Razer.com 검색">
+                    <button class="X_button">
+                        <img src="./img/mobilemenu_img/X_icon3.png">
+                    </button>
+                </div>
+    
+
+
+                <a href="./index.html"><img src="./img/logo/razer-ths-logo.svg" alt="로고"></a>
+                <a href="./razer_pc.html">PC</a>
+                <a href="./razer_console.html">콘솔</a>
+                <a href="./razer_mobile.html">모바일</a>
+                <a href="./razer_lifestyle.html">라이프스타일</a>
+                <a href="./razer_service.html">서비스</a>
+                <a href="./razer_community.html">커뮤니티</a>
+                <a href="./razer_sup.html">고객지원</a>
+                <a href="./razer_store.html">스토어</a>
+                <a href="#" class="search_Icon">
+                    <span class="material-symbols-outlined">
+                    search
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                    shopping_cart
+                    </span>
+                </a>
+            </nav>
+            
+            <div class="nav767">
+
+                <button class="trigger-menu">
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <a href="./index.html"><img src="./img/logo/razer-ths-logo.svg" alt="로고"></a>
+
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                    shopping_cart
+                    </span>
+                </a>
+                
+            </div>
+        </header>
+    </div>
+
+    <script>
+        const search_Trg = document.querySelector('.search_Icon')
+        const search_Bar = document.querySelector('.hidden_src')
+        const xIcon = document.querySelector('.X_button')
+        
+        search_Trg.addEventListener('click',function(){
+            search_Bar.classList.add('active')
+        })
+
+        xIcon.addEventListener('click', function(){
+            search_Bar.classList.remove('active')
+        })
+    </script>    
+
+<!-- header 767px script -->
+
+<script>
+    // nav, trigger-menu = 클래스 active를 토글형태로 만들어줌
+
+    const header = document.querySelector('header');
+    const triggerMenu = document.querySelector('.trigger-menu');
+
+    triggerMenu.onclick = function(){
+        header.classList.toggle('active');
+        triggerMenu.classList.toggle('active');
+    }
+
+</script>
+<!-- header 767px script -->
+
+
+
+    <div class="stiky_navbar">
+        <nav>
+            <p>RAZER BASILISK V3 PRO</p>
+            <div>
+                <div>
+                    <a href="#">개요</a>
+                    <a href="#">기술 사양</a>
+                </div>
+                <a href="#">구입</a>
+                <button class="mobilebutton">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+        <div class="mobilebar">
+            <a href="#">개요</a>
+            <a href="#">기술 사양</a>
+        </div>
+    </div>
+
+    <script>
+        const mobileBar = document.querySelector('.mobilebar')
+        const mobileButton = document.querySelector('.mobilebutton')
+
+        mobileButton.onclick = function(){
+            mobileBar.classList.toggle('active');
+            mobileButton.classList.toggle('active');
+        }
+
+    </script>
+
+
+    <section class="pur_main_container">
+        
+        <div class="gallery">
+
+            <div class="gallery_images">
+                <div class="image01"><img src="./img/purchase_img/razer-basilisk-v3-pro-white-01-1500x1000.jpg"/></div>
+                <div class="image02"><img src="./img/purchase_img/razer-basilisk-v3-pro-white-02-1500x1000.jpg"/></div>
+                <div class="image03"><img src="./img/purchase_img/razer-basilisk-v3-pro-white-03-1500x1000.jpg"/></div>
+                <div class="image04"><img src="./img/purchase_img/razer-basilisk-v3-pro-white-04-1500x1000.jpg"/></div>
+                <div class="image05"><img src="./img/purchase_img/razer-basilisk-v3-pro-white-05-1500x1000.jpg"/></div>
+                <div class="image06"><img src="./img/purchase_img/razer-basilisk-v3-pro-white-06-1500x1000.jpg"/></div>
+            </div>
+
+            <div class="thumbs">
+                <div class="thumb01"><img src="./img/purchase_img/razer-basilisk-v3-pro-white-01-1500x1000_78x78.jpg"></div>
+                <div class="thumb02"><img src="./img/purchase_img/razer-basilisk-v3-pro-white-02-1500x1000_78x78.jpg"></div>
+                <div class="thumb03"><img src="./img/purchase_img/razer-basilisk-v3-pro-white-03-1500x1000_78x78.jpg"></div>
+                <div class="thumb04"><img src="./img/purchase_img/razer-basilisk-v3-pro-white-04-1500x1000_78x78.jpg"></div>
+                <div class="thumb05"><img src="./img/purchase_img/razer-basilisk-v3-pro-white-05-1500x1000_78x78.jpg"></div>
+                <div class="thumb06"><img src="./img/purchase_img/razer-basilisk-v3-pro-white-06-1500x1000_78x78.jpg"></div>
+            </div>
+
+            <button class="forward_button"> >> </button>
+            <button class="back_button"> << </button>
+
+        </div>
+
+
+
+        <div class="right_panel">
+            <div>
+                
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+</main>
+</body>
+</html>

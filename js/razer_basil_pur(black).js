@@ -1,5 +1,5 @@
 let idx=0;
-
+let num=0;
 let abc = $('.thumbs > div');
 
 
@@ -24,6 +24,33 @@ let abc = $('.thumbs > div');
         $('.button_first > div > img').toggleClass('active');
         $('.button_first > div').toggleClass('active')
     })
+
+    $('.forward_button').on('click',function(){
+        $('.gallery_images > div').eq(idx).stop().fadeOut(1000);
+        num++;
+        $('.gallery_images > div').eq(num).stop().fadeIn(1000);
+        idx=num;
+
+        if(num>=5){
+            num=-1;
+        }
+    })
+
+    $('.back_button').on('click',function(){
+        $('.gallery_images > div').eq(idx).stop().fadeOut(1000);
+        num--;
+        $('.gallery_images > div').eq(num).stop().fadeIn(1000);
+        idx=num;
+
+        if(num<0){
+            num=5;
+        }
+    })
+
+
+
+
+
 
 
 

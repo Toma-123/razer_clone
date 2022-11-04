@@ -499,11 +499,14 @@ main {
 }
 
 .thead{
-    
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     font-size: 30px;
     padding-bottom: 30px;
     color: #fff;
     border: none;
+    font-weight: lighter;
     
 }
 

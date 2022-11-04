@@ -447,6 +447,15 @@ main {
     cursor: pointer;
 } 
 
+.button_choice > p:nth-child(1){
+    color: #999;
+}
+
+.button_choice > p:nth-child(1):hover{
+    background-color: rgb(78, 78, 78);
+    cursor: pointer;
+} 
+
 .purchase_button .soldout {
     color: #f00;
     font-size: 20px;

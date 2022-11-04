@@ -777,8 +777,8 @@ main{
         width: 100%;
         max-width: 1200px;
         display: block;
-        margin: 0 auto;
-        margin-left: 2rem;
+        flex-shrink: 0;
+        padding-left: 2rem;
 
         
     }

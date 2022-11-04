@@ -540,6 +540,7 @@ main {
         z-index: 999;
         display: block;
         position: absolute;
+        cursor: pointer;
     }
 
     

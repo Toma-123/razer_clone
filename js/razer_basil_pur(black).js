@@ -25,8 +25,6 @@ let abc = $('.thumbs > div');
         $('.button_first > div').toggleClass('active')
     })
 
-    
-
 
 
 

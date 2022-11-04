@@ -1667,15 +1667,21 @@ text-transform: uppercase;
 
 
 
-
-
-
 /* =========================================================
 ============== warranty_container 반응형 END ================
 ============================================================ */
 
 
-
+.blinking{
+    -webkit-animation:blink 1s ease-in-out infinite alternate;
+    
+  }
+  
+  @-webkit-keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
 
 
 

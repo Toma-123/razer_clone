@@ -430,6 +430,7 @@ main {
     padding-top: 0.5rem;
     
 }
+
 .button_choice > a {
     display: block;
     text-decoration: none;
@@ -447,10 +448,15 @@ main {
     cursor: pointer;
 } 
 
+.button_choice > p:nth-child(2):hover{
+    background-color: rgb(78, 78, 78);
+    cursor: pointer;
+} 
+
 .purchase_button .soldout {
     color: #f00;
     font-size: 20px;
-    /* display: none; */
+    display: none;
 }
 
 .purchase_button .jangba > button{
@@ -461,7 +467,6 @@ main {
     width: 100%;
     background-color: #0f0;
     cursor: pointer;
-    display: none;
 }
 
 

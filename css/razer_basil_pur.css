@@ -798,3 +798,64 @@ main {
     
 }
 
+/* ==========================================================================================
+========================= .property_container 반응형 START ================================
+========================================================================================== */
+
+@media(max-width:767px){
+
+    .property_container{
+        width: 100%;
+        max-width: 1920px;
+        margin: 0 auto;
+        background-color: #252525;
+        padding: 40px 20px;
+    }
+    
+    .property_table{
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    
+    
+    .property_table > tbody > tr{
+        border-bottom: 1px solid #6c757d;
+        padding: 20px 0;
+        font-size: 15px;
+        font-weight: lighter;
+        text-align: left;
+        color: #999999;
+        
+    }
+    
+    .thead{
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        font-size: 30px;
+        padding-bottom: 30px;
+        color: #fff;
+        border: none;
+        font-weight: lighter;
+        
+    }
+    
+    .property_table > tbody > tr > th {
+        color: #fff;
+        font-weight: lighter;
+    }
+    
+    .property_table > tbody > tr > td {
+        padding: 20px;
+        padding-left: 10px;
+        white-space: pre-line;
+        
+    }
+
+}
+
+/* ==========================================================================================
+========================= .property_container 반응형 END ================================
+========================================================================================== */

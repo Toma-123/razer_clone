@@ -10,7 +10,9 @@
     <link rel="icon" type="image/png" href="./favicomatic/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="./favicomatic/favicon-16x16.png" sizes="16x16" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script defer src="./js/razer_common.js"></script>
     <script defer src="./js/razer_basil_pur.js"></script>
+
 </head>
 <body>
     
@@ -74,36 +76,10 @@
         </header>
     </div>
 
-    <script>
-        const search_Trg = document.querySelector('.search_Icon')
-        const search_Bar = document.querySelector('.hidden_src')
-        const xIcon = document.querySelector('.X_button')
-        
-        search_Trg.addEventListener('click',function(){
-            search_Bar.classList.add('active')
-        })
+    
 
-        xIcon.addEventListener('click', function(){
-            search_Bar.classList.remove('active')
-        })
-    </script>    
 
-<!-- header 767px script -->
-
-<script>
-    // nav, trigger-menu = 클래스 active를 토글형태로 만들어줌
-
-    const header = document.querySelector('header');
-    const triggerMenu = document.querySelector('.trigger-menu');
-
-    triggerMenu.onclick = function(){
-        header.classList.toggle('active');
-        triggerMenu.classList.toggle('active');
-    }
-
-</script>
-<!-- header 767px script -->
-
+    
 
 
     <div class="stiky_navbar">

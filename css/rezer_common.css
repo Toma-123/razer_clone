@@ -21,6 +21,12 @@ html,body{ margin:0; }
     box-sizing: border-box;
 }
 
+body.hidden{
+
+    height:100%; min-height:100%; overflow:hidden !important; touch-action:none;
+      
+}
+
 section, div {
     box-sizing: border-box;
     margin: 0;
